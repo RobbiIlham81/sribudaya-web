@@ -29,11 +29,11 @@ const About = () => {
           <div
             className="w-full h-full md:bg-cover lg:bg-contain bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url(/images/about/logo-sribudaya-full.png)",
+              // backgroundImage: "url(/images/about/logo-sribudaya-full.png)",
             }}
           >
-            <div className="absolute inset-0 bg-main opacity-90"></div>
-            <div className="absolute inset-0 bg-main opacity-90"></div>
+            <div className="absolute inset-0  opacity-90"></div>
+            <div className="absolute inset-0  opacity-90"></div>
           </div>
         </div>
 

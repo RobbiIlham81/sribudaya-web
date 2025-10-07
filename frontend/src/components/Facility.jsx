@@ -99,7 +99,7 @@ const Facility = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-main smooth-scroll">
+    <div className="min-h-screen  smooth-scroll">
       {/* Hero Section */}
       <section className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
@@ -208,13 +208,13 @@ const Facility = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
                   href="#facilities"
-                  className="flex flex-col sm:flex-row gap-4 justify-center items-center blue-btn"
+                  className="flex flex-col sm:flex-row gap-4 justify-center items-center terracotaa-btn"
                 >
                   Jelajahi Fasilitas
                 </a>
                 {/* <a
                   href="#booking"
-                  className="flex flex-col sm:flex-row gap-4 justify-center items-center blue-btn"
+                  className="flex flex-col sm:flex-row gap-4 justify-center items-center terracotaa-btn"
                 >
                   Book Now
                 </a> */}
@@ -349,7 +349,7 @@ const Facility = () => {
                       </div>
                     </LazyDiv>
                     {/* Floating Badge */}
-                    {/* <div className="absolute -top-4 -right-4 w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-xl transform rotate-12 group-hover:rotate-0 transition-transform duration-300">
+                    {/* <div className="absolute -top-4 -right-4 w-16 h-16 bg-amber-600 rounded-2xl flex items-center justify-center text-white shadow-xl transform rotate-12 group-hover:rotate-0 transition-transform duration-300">
                       <svg
                         className="w-8 h-8"
                         fill="currentColor"
@@ -364,7 +364,7 @@ const Facility = () => {
                   <div className="lg:w-1/2 space-y-6">
                     <LazyDiv>
                       <div className="flex items-center gap-3 animate-fade-right">
-                        <span className="px-3 py-1 bg-blue-600 text-white rounded-full text-sm font-medium">
+                        <span className="px-3 py-1 bg-amber-600 text-white rounded-full text-sm font-medium">
                           {facility.category}
                         </span>
                       </div>
@@ -404,7 +404,7 @@ const Facility = () => {
 
       {/* CTA Section */}
       <LazyDiv>
-        <section id="booking" className="py-36 bg-main animate-fade-up">
+        <section id="booking" className="py-36  animate-fade-up">
           <div className="max-w-4xl mx-auto text-center px-6">
             {/* <svg
             className="w-16 h-16 mx-auto mb-8 text-blue-600"
@@ -421,10 +421,10 @@ const Facility = () => {
               Resort & Homestay
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center ">
-              <a href="/booking" className="blue-btn  ">
+              <a href="/booking" className="terracotaa-btn  ">
                 Book Your Stay Now
               </a>
-              {/* <a href="#contact" className="blue-btn">
+              {/* <a href="#contact" className="terracotaa-btn">
               Contact Us
             </a> */}
             </div>

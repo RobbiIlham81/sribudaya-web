@@ -60,7 +60,7 @@ const Home = () => {
             <div className="mt-8">
               <Link
                 to="/booking"
-                className="bg-blue-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition"
+                className="terracotaa-btn text-white px-6 py-3 rounded-full shadow-md transition"
               >
                 Booking Sekarang
               </Link>
@@ -79,7 +79,7 @@ const Home = () => {
               <h2 className="page-title">
                 Sribudaya <br /> Resort
               </h2>
-              <div className="w-16 h-[3px] bg-blue-600 mb-6"></div>
+              <div className="w-16 h-[3px] bg-amber-600 mb-6"></div>
               <p className="mb-8 page-title-desc">
                 Sribudaya Resort dirancang untuk memenuhi kebutuhan para
                 wisatawan masa kini. Kami memahami bahwa setiap perjalanan
@@ -89,7 +89,7 @@ const Home = () => {
               </p>
               <Link
                 to="/about"
-                className="bg-blue-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition"
+                className="terracotaa-btn text-white px-6 py-3 rounded-full shadow-md  transition"
               >
                 Know More
               </Link>
@@ -98,7 +98,7 @@ const Home = () => {
             {/* Bagian gambar kanan */}
             <div className="relative max-w-md mx-auto animate-fade-left">
               {/* Border dekoratif di belakang */}
-              <div className="absolute top-6 right-6 w-full h-full rounded-lg border-[3px] border-blue-600 "></div>
+              <div className="absolute top-6 right-6 w-full h-full rounded-lg border-[3px] border-amber-600 "></div>
 
               {/* Gambar utama */}
               <img
@@ -140,7 +140,7 @@ const Home = () => {
                 <div className="mt-4 flex space-x-4">
                   <Link
                     to="/booking"
-                    className="border-2 border-blue-600 px-4 py-2 rounded-md hover:bg-white hover:text-black transition"
+                    className="terracotaa-btn px-4 py-2 rounded-md transition"
                   >
                     View Detail
                   </Link>
@@ -167,7 +167,7 @@ const Home = () => {
                 <div className="mt-4 flex space-x-4">
                   <Link
                     to="/booking"
-                    className="border-2 border-blue-600 px-4 py-2 rounded-md hover:bg-white hover:text-black transition"
+                    className="terracotaa-btn px-4 py-2 rounded-md transition"
                   >
                     View Detail
                   </Link>
@@ -249,7 +249,7 @@ const Home = () => {
                 Pengalaman Lengkap
                 <br /> untuk Anda
               </h2>
-              <div className="absoulute left-0 w-1/4 h-[3px] bg-blue-600 mb-4"></div>
+              <div className="absoulute left-0 w-1/4 h-[3px] bg-amber-600 mb-4"></div>
               <p className="page-title-desc">
                 Nikmati keindahan dan kenyamanan dengan fasilitas resor
                 eksklusif kami, yang dirancang untuk menciptakan pengalaman tak
@@ -266,7 +266,7 @@ const Home = () => {
               <div className="flex flex-col items-center justify-center  rounded-lg p-6 border-2 border-gray-400 shadow-sm hover:shadow-md transition">
                 <FontAwesomeIcon
                   icon="fa-solid fa-wifi"
-                  className="w-10 h-10 mb-3 text-blue-600"
+                  className="w-10 h-10 mb-3 text-amber-600"
                 />
                 <p className="text-gray-700 font-medium">Free Wifi</p>
               </div>
@@ -275,7 +275,7 @@ const Home = () => {
               <div className="flex flex-col items-center justify-center rounded-lg p-6 border-2 border-gray-400 shadow-sm hover:shadow-md transition">
                 <FontAwesomeIcon
                   icon="fa-solid fa-couch"
-                  className="w-10 h-10 mb-3 text-blue-600"
+                  className="w-10 h-10 mb-3 text-amber-600"
                 />
                 <p className="text-gray-700 font-medium">Fine Furnishing</p>
               </div>
@@ -284,7 +284,7 @@ const Home = () => {
               <div className="flex flex-col items-center justify-center  rounded-lg p-6 border-2 border-gray-400 shadow-sm hover:shadow-md transition">
                 <FontAwesomeIcon
                   icon="fa-solid fa-parking"
-                  className="w-10 h-10 mb-3 text-blue-600"
+                  className="w-10 h-10 mb-3 text-amber-600"
                 />
                 <p className="text-gray-700 font-medium">Private Parking</p>
               </div>
@@ -293,7 +293,7 @@ const Home = () => {
               <div className="flex flex-col items-center justify-center  rounded-lg p-6 border-2 border-gray-400 shadow-sm hover:shadow-md transition">
                 <FontAwesomeIcon
                   icon="fa-solid fa-wind"
-                  className="w-10 h-10 mb-3 text-blue-600"
+                  className="w-10 h-10 mb-3 text-amber-600"
                 />
                 <p className="text-gray-700 font-medium">Air Conditioning</p>
               </div>
@@ -375,7 +375,7 @@ const Home = () => {
                 </p>
                 <a
                   href="https://maps.app.goo.gl/RABqKz5fBiXkG8s58"
-                  className="blue-btn"
+                  className="terracotaa-btn"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -395,7 +395,7 @@ const Home = () => {
                 </p>
                 <a
                   href="https://maps.app.goo.gl/UL6635rYHt7oUsgz7"
-                  className="blue-btn"
+                  className="terracotaa-btn"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -416,7 +416,7 @@ const Home = () => {
                 </p>
                 <a
                   href="https://maps.app.goo.gl/1q9f7TL25Eypazoy9"
-                  className="blue-btn"
+                  className="terracotaa-btn"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -436,7 +436,7 @@ const Home = () => {
                 </p>
                 <a
                   href="https://maps.app.goo.gl/s3sP1AsGQC6nWFKv6"
-                  className="blue-btn"
+                  className="terracotaa-btn"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -456,7 +456,7 @@ const Home = () => {
                 </p>
                 <a
                   href="https://maps.app.goo.gl/7K6R87m3EZfnM9Tq9"
-                  className="blue-btn"
+                  className="terracotaa-btn"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -477,7 +477,7 @@ const Home = () => {
                 </p>
                 <a
                   href="https://maps.app.goo.gl/4NLvzB7jvFwFwYa97"
-                  className="blue-btn"
+                  className="terracotaa-btn"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -497,7 +497,7 @@ const Home = () => {
                 </p>
                 <a
                   href="https://maps.app.goo.gl/PmzqPoZGvWPUK5y8A"
-                  className="blue-btn"
+                  className="terracotaa-btn"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -530,7 +530,7 @@ const Home = () => {
                   rel="noreferrer"
                 >
                   <FontAwesomeIcon
-                    className="transition-all duration-200 hover:scale-125 hover:text-blue-600 cursor-pointer"
+                    className="transition-all duration-200 hover:scale-125 hover:text-amber-600 cursor-pointer"
                     icon="fa-brands fa-instagram"
                   />
                 </a>
@@ -544,7 +544,7 @@ const Home = () => {
                   rel="noreferrer"
                 >
                   <FontAwesomeIcon
-                    className="transition-all duration-200 hover:scale-125 hover:text-blue-600 cursor-pointer"
+                    className="transition-all duration-200 hover:scale-125 hover:text-amber-600 cursor-pointer"
                     icon="fa-brands fa-tiktok"
                   />
                 </a>
@@ -558,7 +558,7 @@ const Home = () => {
                   rel="noreferrer"
                 >
                   <FontAwesomeIcon
-                    className="transition-all duration-200 hover:scale-125 hover:text-blue-600 cursor-pointer"
+                    className="transition-all duration-200 hover:scale-125 hover:text-amber-600 cursor-pointer"
                     icon="fa-brands fa-whatsapp"
                   />
                 </a>

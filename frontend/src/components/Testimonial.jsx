@@ -231,7 +231,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="bg-main">
+    <div className="">
       {/* Gallery Section */}
 
       <section className=" md:py-20  overflow-hidden mt-16 animate-fade-up">

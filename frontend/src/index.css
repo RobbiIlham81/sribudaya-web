@@ -5,7 +5,7 @@
 @import "tailwindcss-animated";
 
 body {
-  background-color: #e9e4dc;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   /* font-family: "Open Sans", sans-serif; */
@@ -58,12 +58,12 @@ p {
   background-image: linear-gradient(to right, #16a34a, #14532d);
 }
 
-.blue-btn {
-  @apply text-white bg-blue-600 font-medium rounded-lg px-5 py-2.5 text-center text-base md:text-lg focus:ring-4 focus:outline-none focus:ring-white  transition-all duration-300;
+.terracotaa-btn {
+  @apply text-white bg-amber-600 font-medium rounded-lg px-5 py-2.5 text-center text-base md:text-lg focus:ring-4 focus:outline-none focus:ring-white  transition-all duration-300;
 }
 
-.blue-btn:hover {
-  @apply bg-blue-900;
+.terracotaa-btn:hover {
+  @apply bg-amber-700;
 }
 
 .title {
@@ -75,7 +75,7 @@ p {
 }
 
 .subtitle {
-  @apply text-blue-600 font-semibold tracking-widest uppercase mb-2;
+  @apply text-amber-600 font-semibold tracking-widest uppercase mb-2;
 }
 
 .page-title {

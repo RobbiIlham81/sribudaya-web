@@ -150,270 +150,291 @@ const Booking = () => {
 
               {/* Booking room 1 */}
               <LazyDiv>
-  {/* Booking room 1 - Family Suite */}
-  <div id="booking-room1" className="bg-white w-full rounded-xl shadow-lg overflow-hidden mb-12 transition-all duration-300 hover:shadow-xl border border-stone-100">
-    <div className="flex flex-col lg:flex-row">
-      {/* Image Gallery */}
-      <div ref={fancyboxRefRoom1} className="grid grid-cols-2 gap-3 p-5 lg:w-2/5 bg-stone-50">
-        <img data-fancybox="gallery" src="/images/booking/family-suite01_compressed.jpg" alt="Family Suite" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
-        <img data-fancybox="gallery" src="/images/booking/family-suite02_compressed.jpg" alt="Family Suite" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
-        <img data-fancybox="gallery" src="/images/booking/family-suite03_compressed.jpg" alt="Family Suite" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
-        <img data-fancybox="gallery" src="/images/booking/family-suite04_compressed.jpg" alt="Family Suite" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
-      </div>
-      
-      {/* Room Description */}
-      <div className="p-7 lg:w-2/5">
-        <div className="mb-5">
-          <span className="inline-block px-3 py-1 text-xs font-semibold text-amber-600 bg-amber-100 rounded-full">Premium</span>
-          <h1 className="text-2xl font-bold  mt-3">Family Suite</h1>
-          <div className="w-16 h-1 bg-amber-500 mt-2 rounded-full"></div>
-        </div>
-        
-        <div className="space-y-4 mt-6">
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-bed" />
-            </div>
-            <div>
-              <p className="">Kapasitas 4 dewasa + 2 anak. 1 king bed dan 1 single large</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-utensils" />
-            </div>
-            <div>
-              <p className="">Free sarapan pagi untuk 4 orang</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-water-ladder" />
-            </div>
-            <div>
-              <p className="">Free berenang untuk 4 dewasa & 2 anak</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-couch" />
-            </div>
-            <div>
-              <p className="">Bathtub, living room, 2 bathroom, dan amenities</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-wifi" />
-            </div>
-            <div>
-              <p className="">Netflix dan WIFI cepat</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      {/* Pricing */}
-      <div className="bg-stone-50 p-7 lg:w-1/5 flex flex-col justify-between border-l border-stone-100">
-        <div>
-          <h3 className="text-sm font-medium text-stone-600 uppercase tracking-wider">Harga</h3>
-          <h2 className="text-3xl font-bold text-amber-700 mt-2">Rp. 1.500.000<span className="text-sm font-normal text-stone-600">/malam</span></h2>
-          <div className="mt-6">
-            <div className="flex items-center text-sm text-stone-600 mb-2">
-              <FontAwesomeIcon icon="fa-solid fa-users" className="mr-2 text-amber-500" />
-              <span>4 Dewasa, 2 Anak</span>
-            </div>
-          </div>
-        </div>
-        
-        <a href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20kamar%20dengan%20tipe%20family%20suite" target="_blank" rel="noopener noreferrer" className="terracotaa-btn  text-white font-medium py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center mt-6 shadow-sm">
-          <FontAwesomeIcon icon="fa-brands fa-whatsapp" className="text-xl mr-2" />
-          Booking Sekarang
-        </a>
-      </div>
-    </div>
-  </div>
+                {/* Booking room 1 - Family Suite */}
+                <div id="booking-room1" className="bg-white w-full rounded-xl shadow-lg overflow-hidden mb-12 transition-all duration-300 hover:shadow-xl border border-stone-100">
+                  <div className="flex flex-col lg:flex-row">
+                    {/* Image Gallery */}
+                    <div ref={fancyboxRefRoom1} className="grid grid-cols-2 gap-3 p-5 lg:w-2/5 bg-stone-50">
+                      <img data-fancybox="gallery" src="/images/booking/family-suite01_compressed.jpg" alt="Family Suite" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
+                      <img data-fancybox="gallery" src="/images/booking/family-suite02_compressed.jpg" alt="Family Suite" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
+                      <img data-fancybox="gallery" src="/images/booking/family-suite03_compressed.jpg" alt="Family Suite" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
+                      <img data-fancybox="gallery" src="/images/booking/family-suite04_compressed.jpg" alt="Family Suite" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
+                    </div>
 
-  {/* Booking room 2 - Family Studio */}
-  <div id="booking-room2" className="bg-white w-full rounded-xl shadow-lg overflow-hidden mb-12 transition-all duration-300 hover:shadow-xl border border-stone-100">
-    <div className="flex flex-col lg:flex-row">
-      {/* Image Gallery */}
-      <div ref={fancyboxRefRoom2} className="grid grid-cols-2 gap-3 p-5 lg:w-2/5 bg-stone-50">
-        <img data-fancybox="gallery" src="/images/booking/family-studio01_compressed.jpg" alt="Family Studio" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
-        <img data-fancybox="gallery" src="/images/booking/family-studio02_compressed.jpg" alt="Family Studio" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
-        <img data-fancybox="gallery" src="/images/booking/family-studio03_compressed.jpg" alt="Family Studio" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
-        <img data-fancybox="gallery" src="/images/booking/family-studio04_compressed.jpg" alt="Family Studio" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
-      </div>
-      
-      {/* Room Description */}
-      <div className="p-7 lg:w-2/5">
-        <div className="mb-5">
-          <span className="inline-block px-3 py-1 text-xs font-semibold text-amber-600 bg-amber-100 rounded-full">Popular</span>
-          <h1 className="text-2xl font-bold  mt-3">Family Studio</h1>
-          <div className="w-16 h-1 bg-amber-600 mt-2 rounded-full"></div>
-        </div>
-        
-        <div className="space-y-4 mt-6">
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-bed" />
-            </div>
-            <div>
-              <p className="">Kapasitas 4 dewasa + 2 anak. 1 king bed dan 1 single large</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-utensils" />
-            </div>
-            <div>
-              <p className="">Free sarapan pagi untuk 4 orang</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-water-ladder" />
-            </div>
-            <div>
-              <p className="">Free berenang untuk 4 dewasa & 2 anak</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-couch" />
-            </div>
-            <div>
-              <p className="">Dapur, Living Room, 1 Bathroom, dan Amenities</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-wifi" />
-            </div>
-            <div>
-              <p className="">Netflix dan WIFI cepat</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      {/* Pricing */}
-      <div className="bg-stone-50 p-7 lg:w-1/5 flex flex-col justify-between border-l border-stone-100">
-        <div>
-          <h3 className="text-sm font-medium text-stone-600 uppercase tracking-wider">Harga</h3>
-          <h2 className="text-3xl font-bold text-amber-700 mt-2">Rp. 1.300.000<span className="text-sm font-normal text-stone-600">/malam</span></h2>
-          <div className="mt-6">
-            <div className="flex items-center text-sm text-stone-600 mb-2">
-              <FontAwesomeIcon icon="fa-solid fa-users" className="mr-2 text-amber-500" />
-              <span>4 Dewasa, 2 Anak</span>
-            </div>
-          </div>
-        </div>
-        
-        <a href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20kamar%20dengan%20tipe%20family%20Studio" target="_blank" rel="noopener noreferrer" className="terracotaa-btn  text-white font-medium py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center mt-6 shadow-sm">
-          <FontAwesomeIcon icon="fa-brands fa-whatsapp" className="text-xl mr-2" />
-          Booking Sekarang
-        </a>
-      </div>
-    </div>
-  </div>
+                    {/* Room Description */}
+                    <div className="p-7 lg:w-2/5">
+                      <div className="mb-5">
+                        <span className="inline-block px-3 py-1 text-xs font-semibold text-amber-600 bg-amber-100 rounded-full">Premium</span>
+                        <h1 className="text-2xl font-bold  mt-3">Family Suite</h1>
+                        <div className="w-16 h-1 bg-amber-500 mt-2 rounded-full"></div>
+                      </div>
 
-  {/* Booking room 3 - Family Deluxe */}
-  <div id="booking-room3" className="bg-white w-full rounded-xl shadow-lg overflow-hidden mb-12 transition-all duration-300 hover:shadow-xl border border-stone-100">
-    <div className="flex flex-col lg:flex-row">
-      {/* Image Gallery */}
-      <div ref={fancyboxRefRoom3} className="grid grid-cols-2 gap-3 p-5 lg:w-2/5 bg-stone-50">
-        <img data-fancybox="gallery" src="/images/booking/family-deluxe01_compressed.jpg" alt="Family Deluxe" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
-        <img data-fancybox="gallery" src="/images/booking/family-deluxe02_compressed.jpg" alt="Family Deluxe" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
-        <img data-fancybox="gallery" src="/images/booking/family-deluxe03_compressed.jpg" alt="Family Deluxe" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
-        <img data-fancybox="gallery" src="/images/booking/family-deluxe04_compressed.jpg" alt="Family Deluxe" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
-      </div>
-      
-      {/* Room Description */}
-      <div className="p-7 lg:w-2/5">
-        <div className="mb-5">
-          <span className="inline-block px-3 py-1 text-xs font-semibold text-amber-600 bg-rose-100 rounded-full">Spacious</span>
-          <h1 className="text-2xl font-bold  mt-3">Family Deluxe</h1>
-          <div className="w-16 h-1 bg-amber-600 mt-2 rounded-full"></div>
-        </div>
-        
-        <div className="space-y-4 mt-6">
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-bed" />
-            </div>
-            <div>
-              <p className="">Kapasitas 5 dewasa + 2 anak. 1 king bed dan 1 single large</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-utensils" />
-            </div>
-            <div>
-              <p className="">Free sarapan pagi untuk 4 orang</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-water-ladder" />
-            </div>
-            <div>
-              <p className="">Free berenang untuk 5 dewasa & 2 anak</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-couch" />
-            </div>
-            <div>
-              <p className="">Wide Room, 1 Bathroom, dan Amenities</p>
-            </div>
-          </div>
-          
-          <div className="flex items-start gap-3">
-            <div className="mt-1 text-amber-600">
-              <FontAwesomeIcon className="text-xl" icon="fa-solid fa-wifi" />
-            </div>
-            <div>
-              <p className="">Netflix dan WIFI cepat</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      {/* Pricing */}
-      <div className="bg-stone-50 p-7 lg:w-1/5 flex flex-col justify-between border-l border-stone-100">
-        <div>
-          <h3 className="text-sm font-medium text-stone-600 uppercase tracking-wider">Harga</h3>
-          <h2 className="text-3xl font-bold text-amber-700 mt-2">Rp. 1.300.000<span className="text-sm font-normal text-stone-600">/malam</span></h2>
-          <div className="mt-6">
-            <div className="flex items-center text-sm text-stone-600 mb-2">
-              <FontAwesomeIcon icon="fa-solid fa-users" className="mr-2 text-amber-500" />
-              <span>5 Dewasa, 2 Anak</span>
-            </div>
-          </div>
-        </div>
-        
-        <a href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20kamar%20dengan%20tipe%20family%20deluxe" target="_blank" rel="noopener noreferrer" className="terracotaa-btn  text-white font-medium py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center mt-6 shadow-sm">
-          <FontAwesomeIcon icon="fa-brands fa-whatsapp" className="text-xl mr-2" />
-          Booking Sekarang
-        </a>
-      </div>
-    </div>
-  </div>
-</LazyDiv>
+                      <div className="space-y-4 mt-6">
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-bed" />
+                          </div>
+                          <div>
+                            <p className="">Kapasitas 4 dewasa + 2 anak. 1 king bed dan 1 single large</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-utensils" />
+                          </div>
+                          <div>
+                            <p className="">Free sarapan pagi untuk 4 orang</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-water-ladder" />
+                          </div>
+                          <div>
+                            <p className="">Free berenang untuk 4 dewasa & 2 anak</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-couch" />
+                          </div>
+                          <div>
+                            <p className="">Bathtub, living room, 2 bathroom, dan amenities</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-wifi" />
+                          </div>
+                          <div>
+                            <p className="">Netflix dan WIFI cepat</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Pricing */}
+                    <div className="bg-stone-50 p-7 lg:w-1/5 flex flex-col justify-between border-l border-stone-100">
+                      <div>
+                        <h3 className="text-sm font-medium text-stone-600 uppercase tracking-wider">Harga</h3>
+                        <h2 className="text-3xl font-bold text-amber-700 mt-2">
+                          Rp. 1.500.000<span className="text-sm font-normal text-stone-600">/malam</span>
+                        </h2>
+                        <div className="mt-6">
+                          <div className="flex items-center text-sm text-stone-600 mb-2">
+                            <FontAwesomeIcon icon="fa-solid fa-users" className="mr-2 text-amber-500" />
+                            <span>4 Dewasa, 2 Anak</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <a
+                        href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20kamar%20dengan%20tipe%20family%20suite"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="terracotaa-btn  text-white font-medium py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center mt-6 shadow-sm"
+                      >
+                        <FontAwesomeIcon icon="fa-brands fa-whatsapp" className="text-xl mr-2" />
+                        Booking Sekarang
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Booking room 2 - Family Studio */}
+                <div id="booking-room2" className="bg-white w-full rounded-xl shadow-lg overflow-hidden mb-12 transition-all duration-300 hover:shadow-xl border border-stone-100">
+                  <div className="flex flex-col lg:flex-row">
+                    {/* Image Gallery */}
+                    <div ref={fancyboxRefRoom2} className="grid grid-cols-2 gap-3 p-5 lg:w-2/5 bg-stone-50">
+                      <img data-fancybox="gallery" src="/images/booking/family-studio01_compressed.jpg" alt="Family Studio" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
+                      <img data-fancybox="gallery" src="/images/booking/family-studio02_compressed.jpg" alt="Family Studio" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
+                      <img data-fancybox="gallery" src="/images/booking/family-studio03_compressed.jpg" alt="Family Studio" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
+                      <img data-fancybox="gallery" src="/images/booking/family-studio04_compressed.jpg" alt="Family Studio" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
+                    </div>
+
+                    {/* Room Description */}
+                    <div className="p-7 lg:w-2/5">
+                      <div className="mb-5">
+                        <span className="inline-block px-3 py-1 text-xs font-semibold text-amber-600 bg-amber-100 rounded-full">Popular</span>
+                        <h1 className="text-2xl font-bold  mt-3">Family Studio</h1>
+                        <div className="w-16 h-1 bg-amber-600 mt-2 rounded-full"></div>
+                      </div>
+
+                      <div className="space-y-4 mt-6">
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-bed" />
+                          </div>
+                          <div>
+                            <p className="">Kapasitas 4 dewasa + 2 anak. 1 king bed dan 1 single large</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-utensils" />
+                          </div>
+                          <div>
+                            <p className="">Free sarapan pagi untuk 4 orang</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-water-ladder" />
+                          </div>
+                          <div>
+                            <p className="">Free berenang untuk 4 dewasa & 2 anak</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-couch" />
+                          </div>
+                          <div>
+                            <p className="">Dapur, Living Room, 1 Bathroom, dan Amenities</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-wifi" />
+                          </div>
+                          <div>
+                            <p className="">Netflix dan WIFI cepat</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Pricing */}
+                    <div className="bg-stone-50 p-7 lg:w-1/5 flex flex-col justify-between border-l border-stone-100">
+                      <div>
+                        <h3 className="text-sm font-medium text-stone-600 uppercase tracking-wider">Harga</h3>
+                        <h2 className="text-3xl font-bold text-amber-700 mt-2">
+                          Rp. 1.300.000<span className="text-sm font-normal text-stone-600">/malam</span>
+                        </h2>
+                        <div className="mt-6">
+                          <div className="flex items-center text-sm text-stone-600 mb-2">
+                            <FontAwesomeIcon icon="fa-solid fa-users" className="mr-2 text-amber-500" />
+                            <span>4 Dewasa, 2 Anak</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <a
+                        href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20kamar%20dengan%20tipe%20family%20Studio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="terracotaa-btn  text-white font-medium py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center mt-6 shadow-sm"
+                      >
+                        <FontAwesomeIcon icon="fa-brands fa-whatsapp" className="text-xl mr-2" />
+                        Booking Sekarang
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Booking room 3 - Family Deluxe */}
+                <div id="booking-room3" className="bg-white w-full rounded-xl shadow-lg overflow-hidden mb-12 transition-all duration-300 hover:shadow-xl border border-stone-100">
+                  <div className="flex flex-col lg:flex-row">
+                    {/* Image Gallery */}
+                    <div ref={fancyboxRefRoom3} className="grid grid-cols-2 gap-3 p-5 lg:w-2/5 bg-stone-50">
+                      <img data-fancybox="gallery" src="/images/booking/family-deluxe01_compressed.jpg" alt="Family Deluxe" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
+                      <img data-fancybox="gallery" src="/images/booking/family-deluxe02_compressed.jpg" alt="Family Deluxe" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
+                      <img data-fancybox="gallery" src="/images/booking/family-deluxe03_compressed.jpg" alt="Family Deluxe" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
+                      <img data-fancybox="gallery" src="/images/booking/family-deluxe04_compressed.jpg" alt="Family Deluxe" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
+                    </div>
+
+                    {/* Room Description */}
+                    <div className="p-7 lg:w-2/5">
+                      <div className="mb-5">
+                        <span className="inline-block px-3 py-1 text-xs font-semibold text-amber-600 bg-rose-100 rounded-full">Spacious</span>
+                        <h1 className="text-2xl font-bold  mt-3">Family Deluxe</h1>
+                        <div className="w-16 h-1 bg-amber-600 mt-2 rounded-full"></div>
+                      </div>
+
+                      <div className="space-y-4 mt-6">
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-bed" />
+                          </div>
+                          <div>
+                            <p className="">Kapasitas 5 dewasa + 2 anak. 1 king bed dan 1 single large</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-utensils" />
+                          </div>
+                          <div>
+                            <p className="">Free sarapan pagi untuk 4 orang</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-water-ladder" />
+                          </div>
+                          <div>
+                            <p className="">Free berenang untuk 5 dewasa & 2 anak</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-couch" />
+                          </div>
+                          <div>
+                            <p className="">Wide Room, 1 Bathroom, dan Amenities</p>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3">
+                          <div className="mt-1 text-amber-600">
+                            <FontAwesomeIcon className="text-xl" icon="fa-solid fa-wifi" />
+                          </div>
+                          <div>
+                            <p className="">Netflix dan WIFI cepat</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Pricing */}
+                    <div className="bg-stone-50 p-7 lg:w-1/5 flex flex-col justify-between border-l border-stone-100">
+                      <div>
+                        <h3 className="text-sm font-medium text-stone-600 uppercase tracking-wider">Harga</h3>
+                        <h2 className="text-3xl font-bold text-amber-700 mt-2">
+                          Rp. 1.300.000<span className="text-sm font-normal text-stone-600">/malam</span>
+                        </h2>
+                        <div className="mt-6">
+                          <div className="flex items-center text-sm text-stone-600 mb-2">
+                            <FontAwesomeIcon icon="fa-solid fa-users" className="mr-2 text-amber-500" />
+                            <span>5 Dewasa, 2 Anak</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <a
+                        href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20kamar%20dengan%20tipe%20family%20deluxe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="terracotaa-btn  text-white font-medium py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center mt-6 shadow-sm"
+                      >
+                        <FontAwesomeIcon icon="fa-brands fa-whatsapp" className="text-xl mr-2" />
+                        Booking Sekarang
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </LazyDiv>
             </div>
           </div>
         </div>
@@ -1062,7 +1083,7 @@ const Booking = () => {
                         <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
                           <FontAwesomeIcon icon="fa fa-bars" className="text-lg " />
                         </div>
-                        
+
                         <div className="text-gray-800">
                           <span className="font-medium">Handuk:</span> Gratis 1 handuk
                         </div>
@@ -1144,7 +1165,7 @@ const Booking = () => {
               <SwiperSlide className="!h-auto">
                 <div className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
                   <div className="p-6 flex-grow flex flex-col">
-                    <div className="mb-6">
+                    <div className="mb-">
                       <div className="w-12 h-1 bg-amber-600 mb-4 mx-auto"></div>
                       <h3 className="text-xl md:text-2xl font-bold text-black mb-2 text-center">Pendamping</h3>
                       <div className="text-amber-600 font-bold text-2xl text-center">Rp. 50.000/person</div>
@@ -1185,6 +1206,9 @@ const Booking = () => {
         {/* Accordion section */}
         <div className="accordion-container my-16">
           {/* title for FAQ section */}
+
+
+          
           <LazyDiv>
             <div className="booking-title relative mt-8 w-fit animate-fade-right">
               <h2 className="subtitle text-left">F.A.Q.</h2>
@@ -1193,53 +1217,49 @@ const Booking = () => {
             </div>
           </LazyDiv>
 
-          <div className="w-full mt-10 rounded-xl">
-            {/* Item 1 */}
+          <div className="w-full mt-10 rounded-xl ">
             <LazyDiv>
-              <div className="border mt-2 bg-main rounded-lg border-black animate-fade-left animate-delay-100">
-                <button onClick={() => setOpenIndex(openIndex === 0 ? null : 0)} className="flex items-center justify-between w-full p-5 font-medium  hover:bg-gray-100 hover:rounded-t-lg gap-3">
-                  <span className="text-left font-semibold">Bagaimana cara booking kamar?</span>
-                  <svg className={`w-3 h-3 shrink-0 transition-transform duration-300 ${openIndex === 0 ? "rotate-180" : ""}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
-                  </svg>
-                </button>
-                <div className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${openIndex === 0 ? "max-h-96" : "max-h-0"}`}>
-                  <div className="p-5 border-t border-black ">
-                    <p className="mb-2 ">Anda bisa langsung klik tombol booking di paket yang anda inginkan dan anda akan langsung diarahkan ke admin kami melalui WhatsApp</p>
-                  </div>
-                </div>
-              </div>
-            </LazyDiv>
+              {/* Item 1 */}
+              <div className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
+                <div className="p-6 flex-grow flex flex-col">
+                 
+                    <div className="">
+                      <button onClick={() => setOpenIndex(openIndex === 0 ? null : 0)} className="flex items-center justify-between w-full p-5 font-medium  hover:bg-gray-100 hover:rounded-t-lg gap-3">
+                        <span className="text-left font-semibold">Bagaimana cara booking kamar?</span>
+                        <svg className={`w-3 h-3 shrink-0 transition-transform duration-300 ${openIndex === 0 ? "rotate-180" : ""}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
+                        </svg>
+                      </button>
+                      <div className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${openIndex === 0 ? "max-h-96" : "max-h-0"}`}>
+                        <p className="mb-2 p-5">Anda bisa langsung klik tombol booking di paket yang anda inginkan dan anda akan langsung diarahkan ke admin kami melalui WhatsApp</p>
+                      </div>
+                    </div>
+             
 
-            {/* Item 2 */}
-            <LazyDiv>
-              <div className="border mt-2 bg-main rounded-lg border-black animate-fade-right animate-delay-200">
-                <button onClick={() => setOpenIndex(openIndex === 1 ? null : 1)} className="flex items-center justify-between w-full p-5 font-medium  hover:bg-gray-100  gap-3">
-                  <span className="text-left font-semibold">Apakah tersedia extra bed?</span>
-                  <svg className={`w-3 h-3 shrink-0 transition-transform duration-300 ${openIndex === 1 ? "rotate-180" : ""}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
-                  </svg>
-                </button>
-                <div className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${openIndex === 1 ? "max-h-96" : "max-h-0"}`}>
-                  <div className="p-5 border-t border-black ">
-                    <p className="mb-2 ">Extra bed tersedia dengan biaya tambahan per malam. Silakan hubungi resepsionis untuk informasi harga dan ketersediaan.</p>
+                  {/* Item 2 */}
+                  <div className="">
+                    <button onClick={() => setOpenIndex(openIndex === 1 ? null : 1)} className="flex items-center justify-between w-full p-5 font-medium  hover:bg-gray-100  gap-3">
+                      <span className="text-left font-semibold">Apakah tersedia extra bed?</span>
+                      <svg className={`w-3 h-3 shrink-0 transition-transform duration-300 ${openIndex === 1 ? "rotate-180" : ""}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
+                      </svg>
+                    </button>
+                    <div className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${openIndex === 1 ? "max-h-96" : "max-h-0"}`}>
+                      <p className="mb-2 p-5">Extra bed tersedia dengan biaya tambahan per malam. Silakan hubungi resepsionis untuk informasi harga dan ketersediaan.</p>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </LazyDiv>
 
-            {/* Item 3 */}
-            <LazyDiv>
-              <div className="border mt-2 rounded-lg bg-main border-black animate-fade-left animate-delay-300">
-                <button onClick={() => setOpenIndex(openIndex === 2 ? null : 2)} className="flex items-center justify-between w-full p-5 font-medium  hover:bg-gray-100 hover:rounded-b-lg gap-3">
-                  <span className="text-left font-semibold">Apakah tersedia parkir untuk tamu?</span>
-                  <svg className={`w-3 h-3 shrink-0 transition-transform duration-300 ${openIndex === 2 ? "rotate-180" : ""}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
-                  </svg>
-                </button>
-                <div className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${openIndex === 2 ? "max-h-96" : "max-h-0"}`}>
-                  <div className="p-5 border-t border-black ">
-                    <p className="mb-2 ">Ya, kami menyediakan area parkir luas dan gratis untuk tamu yang menginap, termasuk parkir motor dan mobil. beserta fasilitas lainnya</p>
+                  {/* Item 3 */}
+                  <div className="">
+                    <button onClick={() => setOpenIndex(openIndex === 2 ? null : 2)} className="flex items-center justify-between w-full p-5 font-medium  hover:bg-gray-100 hover:rounded-b-lg gap-3">
+                      <span className="text-left font-semibold">Apakah tersedia parkir untuk tamu?</span>
+                      <svg className={`w-3 h-3 shrink-0 transition-transform duration-300 ${openIndex === 2 ? "rotate-180" : ""}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5" />
+                      </svg>
+                    </button>
+                    <div className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${openIndex === 2 ? "max-h-96" : "max-h-0"}`}>
+                      <p className="mb-2 p-5">Ya, kami menyediakan area parkir luas dan gratis untuk tamu yang menginap, termasuk parkir motor dan mobil. beserta fasilitas lainnya</p>
+                    </div>
                   </div>
                 </div>
               </div>

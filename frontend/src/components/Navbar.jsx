@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <section id="navbar-section" className="sticky top-0 z-50">
-      <nav className="border-gray-200 bg-white relative">
+      <nav className="border-gray-200 bg-white relative shadow-md">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           {/* Logo */}
           <Link

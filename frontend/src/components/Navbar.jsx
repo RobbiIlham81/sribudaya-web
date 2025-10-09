@@ -1,27 +1,35 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const navItems = [
+    { to: "/", label: "Home" },
+    { to: "/about", label: "About" },
+    { to: "/booking", label: "Booking" },
+    { to: "/facility", label: "Facility" },
+    { to: "/contact", label: "Contact" },
+  ];
 
   return (
     <section id="navbar-section" className="sticky top-0 z-50">
       <nav className="border-gray-200 bg-white relative shadow-md">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           {/* Logo */}
-          <Link
+          <NavLink
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
               src="/images/logo-sribudaya-full.png"
               className="h-10"
-              alt="Flowbite Logo"
+              alt="Sribudaya Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap">
               Sribudaya Resort
             </span>
-          </Link>
+          </NavLink>
 
           {/* Mobile toggle button */}
           <button
@@ -52,39 +60,35 @@ const Navbar = () => {
           {/* Menu */}
           <div
             id="navbar-menu"
-            className={`
-              md:block md:w-auto
-              ${
-                isOpen
-                  ? "max-h-96 opacity-100 translate-y-0"
-                  : "max-h-0 opacity-0 -translate-y-2"
-              }
-              overflow-hidden transition-all duration-500 ease-in-out
+            className={`md:block md:w-auto ${
+              isOpen
+                ? "max-h-96 opacity-100 translate-y-0"
+                : "max-h-0 opacity-0 -translate-y-2"
+            } overflow-hidden transition-all duration-500 ease-in-out
               w-full md:max-h-none md:opacity-100 md:translate-y-0
-              absolute top-[90%] left-0 md:static
-            `}
+              absolute top-[90%] left-0 md:static`}
           >
             <ul className="flex flex-col font-medium mt-2 md:mt-0 rounded-lg bg-[#2f2f2f] md:space-x-8 rtl:space-x-reverse md:flex-row md:border-0 md:bg-transparent shadow-lg md:shadow-none">
-              {[
-                { to: "/", label: "Home" },
-                { to: "/about", label: "About" },
-                { to: "/booking", label: "Booking" },
-                { to: "/facility", label: "Facility" },
-                { to: "/contact", label: "Contact" },
-              ].map(({ to, label }) => (
+              {navItems.map(({ to, label }) => (
                 <li key={to}>
-                  <Link
+                  <NavLink
                     to={to}
-                    className={`
-                      block py-2 px-3 rounded-sm transition-colors duration-300
-                      text-[#e9e4dc] hover:text-white hover:bg-gray-700
-                      md:p-0 md:hover:bg-transparent
-                      md:text-black md:hover:text-blue-700
-                    `}
+                    end
+                    className={({ isActive }) =>
+                      `
+                        block py-2 px-3 rounded-sm transition-colors duration-300
+                        ${
+                          isActive
+                            ? "text-[#D97706] font-semibold md:border-b-2 md:border-[#D97706]"
+                            : "text-[#e9e4dc] hover:text-white hover:bg-gray-700 md:text-black md:hover:text-amber-700 md:hover:border-b-2 md:hover:border-amber-700"
+                        }
+                        md:p-0 md:hover:bg-transparent
+                      `
+                    }
                     onClick={() => setIsOpen(false)}
                   >
                     {label}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </ul>

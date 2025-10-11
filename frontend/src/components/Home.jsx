@@ -364,7 +364,7 @@ const Home = () => {
             modules={[Pagination, Autoplay]}
           >
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg ">
+              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
                 <h1 className="text-2xl font-bold mb-2">
                   Pusat kota Banda Aceh, 5 KM
                 </h1>
@@ -384,7 +384,7 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg ">
+              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
                 <h1 className="text-2xl font-bold mb-2">
                   Mesjid Raya Baiturrahman, 5 KM
                 </h1>
@@ -405,7 +405,7 @@ const Home = () => {
             </SwiperSlide>
 
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg ">
+              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
                 <h1 className="text-2xl font-bold mb-2">
                   Bandara Sultan Iskandar Muda, 12 KM
                 </h1>
@@ -425,7 +425,7 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg ">
+              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
                 <h1 className="text-2xl font-bold mb-2">
                   Pusat Wisata Tsunami Museum, 5 KM
                 </h1>
@@ -445,7 +445,7 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg ">
+              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
                 <h1 className="text-2xl font-bold mb-2">
                   Pelabuhan Malahayati, 34 KM
                 </h1>
@@ -465,7 +465,7 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg ">
+              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
                 <h1 className="text-2xl font-bold mb-2">
                   Pelabuhan Ulee Lheue, 10 KM
                 </h1>
@@ -486,7 +486,7 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg ">
+              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
                 <h1 className="text-2xl font-bold mb-2">
                   RSUD dr. Zainoel Abidin, 7 KM
                 </h1>

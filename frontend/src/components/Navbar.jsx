@@ -8,6 +8,7 @@ const Navbar = () => {
     { to: "/", label: "Home" },
     { to: "/about", label: "About" },
     { to: "/booking", label: "Booking" },
+
     { to: "/facility", label: "Facility" },
     { to: "/contact", label: "Contact" },
   ];
@@ -17,18 +18,9 @@ const Navbar = () => {
       <nav className="border-gray-200 bg-white relative shadow-md">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           {/* Logo */}
-          <NavLink
-            to="/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <img
-              src="/images/logo-sribudaya-full.png"
-              className="h-10"
-              alt="Sribudaya Logo"
-            />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap">
-              Sribudaya Resort
-            </span>
+          <NavLink to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/images/logo-sribudaya-full.png" className="h-10" alt="Sribudaya Logo" />
+            <span className="self-center text-2xl font-semibold whitespace-nowrap">Sribudaya Resort</span>
           </NavLink>
 
           {/* Mobile toggle button */}
@@ -40,31 +32,15 @@ const Navbar = () => {
             aria-expanded={isOpen}
           >
             <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
+            <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
             </svg>
           </button>
 
           {/* Menu */}
           <div
             id="navbar-menu"
-            className={`md:block md:w-auto ${
-              isOpen
-                ? "max-h-96 opacity-100 translate-y-0"
-                : "max-h-0 opacity-0 -translate-y-2"
-            } overflow-hidden transition-all duration-500 ease-in-out
+            className={`md:block md:w-auto ${isOpen ? "max-h-96 opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-2"} overflow-hidden transition-all duration-500 ease-in-out
               w-full md:max-h-none md:opacity-100 md:translate-y-0
               absolute top-[90%] left-0 md:static`}
           >
@@ -77,11 +53,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                       `
                         block py-2 px-3 rounded-sm transition-colors duration-300
-                        ${
-                          isActive
-                            ? "text-[#D97706] font-semibold md:border-b-2 md:border-[#D97706]"
-                            : "text-[#e9e4dc] hover:text-white hover:bg-gray-700 md:text-black md:hover:text-amber-700 md:hover:border-b-2 md:hover:border-amber-700"
-                        }
+                        ${isActive ? "text-[#D97706] font-semibold md:border-b-2 md:border-[#D97706]" : "text-[#e9e4dc] hover:text-white hover:bg-gray-700 md:text-black md:hover:text-amber-700 md:hover:border-b-2 md:hover:border-amber-700"}
                         md:p-0 md:hover:bg-transparent
                       `
                     }

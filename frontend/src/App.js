@@ -6,7 +6,6 @@ import Booking from "./components/Booking";
 import Contact from "./components/Contact";
 import Facility from "./components/Facility";
 import Footer from "./components/Footer";
-import GalleryViewAll from "./components/GalleryViewAll";
 import ScrollToTop from "./components/misc/ScrollToTop";
 import Wedding from "./components/Wedding";
 
@@ -23,7 +22,6 @@ function App() {
           <Route path="/Wedding" element={<Wedding />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/facility" element={<Facility />} />
-          <Route path="/gallery" element={<GalleryViewAll />} />
         </Routes>
         <Footer />
       </BrowserRouter>

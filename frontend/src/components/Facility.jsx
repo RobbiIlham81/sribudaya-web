@@ -47,13 +47,6 @@ const facilities = [
     category: "Convenience",
   },
   {
-    title: "Resepsionis 24 Jam",
-    description:
-      "Staf resepsionis selalu siap 24 jam untuk membantu kebutuhan Anda, dari check-in hingga layanan darurat, dengan ramah dan profesional.",
-    image: "images/facility/resepsionis.jpg",
-    category: "Service",
-  },
-  {
     title: "Wedding Venue",
     description:
       "Rayakan momen sakral dengan suasana magis dan layanan terbaik di venue mewah yang akan membuat pernikahan Anda tak terlupakan",

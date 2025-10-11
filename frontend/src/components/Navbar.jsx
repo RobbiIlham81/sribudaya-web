@@ -20,7 +20,6 @@ const Navbar = () => {
           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="/images/logo-sribudaya-full.png" className="h-10" alt="Sribudaya Logo" />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap">Sribudaya Resort</span>
           </NavLink>
 
           {/* Mobile toggle button */}

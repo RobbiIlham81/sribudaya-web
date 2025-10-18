@@ -182,17 +182,17 @@ const Home = () => {
       <section id="social-media" className="mb-8">
         <div className="sosmed-container flex justify-center items-center flex-col py-10 h-auto">
           {/* partner title */}
-          <LazyDiv>
+          {/* <LazyDiv>
             <div className="text-center mb-12 animate-fade-up">
               <h2 className="subtitle">Partner Sites</h2>
               <h2 className="page-title">
                 Anda dapat menemukan kami di situs pemesanan populer.
               </h2>
             </div>
-          </LazyDiv>
+          </LazyDiv> */}
 
           {/* Sosmed Icons */}
-          <LazyDiv>
+          {/* <LazyDiv>
             <div className="social-media-icon h-auto flex justify-center items-center flex-wrap gap-10 px-5 md:gap-24">
               <div className="transition-transform duration-200 hover:scale-125 animate-jump-in animate-delay-100">
                 <a
@@ -207,6 +207,7 @@ const Home = () => {
                   />
                 </a>
               </div>
+
               <div className="transition-transform duration-200 hover:scale-125 animate-jump-in animate-delay-200">
                 <a
                   href="https://www.tiket.com/hotel/indonesia/sribudaya-resort-708001724122959169?checkin=2024-08-26&checkout=2024-08-27&adult=1&room=1&utm_external=organic&utm_medium=hotel_pdp%3Bshare_button"
@@ -216,10 +217,11 @@ const Home = () => {
                   <img
                     src="tiketcom.png"
                     className="w-40 md:w-56 md:h-16"
-                    alt="bookingcom.png"
+                    alt="tiketcom.png"
                   />
                 </a>
               </div>
+
               <div className="transition-transform duration-200 hover:scale-125 animate-jump-in animate-delay-300">
                 <a
                   href="https://www.agoda.com/sribudaya-resort/hotel/aceh-id.html?checkin=2024-11-27&checkout=2024-11-28&los=1&rooms=1&adults=1&children=0&cid=1924241&searchrequestid=3609c674-949e-4cd3-a91a-8881b3b76029&tag=op7d38f94ba1cd458aa3f2c809cc92e169SG&ds=AQO4US3VCi%2FiSHag"
@@ -229,12 +231,26 @@ const Home = () => {
                   <img
                     src="agoda.png"
                     className="w-auto h-16"
-                    alt="bookingcom.png"
+                    alt="agoda.png"
+                  />
+                </a>
+              </div>
+              
+              <div className="transition-transform duration-200 hover:scale-125 animate-jump-in animate-delay-400">
+                <a
+                  href="https://www.traveloka.com/id-id/hotel/indonesia/sribudaya-resort-900000120406870"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="traveloka.png"
+                    className="w-40 md:w-56 md:h-16"
+                    alt="traveloka.png"
                   />
                 </a>
               </div>
             </div>
-          </LazyDiv>
+          </LazyDiv> */}
         </div>
       </section>
       {/* Partner with section end */}
@@ -263,7 +279,7 @@ const Home = () => {
             <div className="grid grid-cols-2 gap-6 animate-fade-left">
               {/* Wifi */}
 
-              <div className="flex flex-col items-center justify-center  rounded-lg p-6 border-2 border-gray-400 shadow-sm hover:shadow-md transition">
+              <div className="flex flex-col items-center justify-center  rounded-lg p-6  shadow-lg hover:shadow-md transition">
                 <FontAwesomeIcon
                   icon="fa-solid fa-wifi"
                   className="w-10 h-10 mb-3 text-amber-600"
@@ -272,7 +288,7 @@ const Home = () => {
               </div>
 
               {/* Furnishing */}
-              <div className="flex flex-col items-center justify-center rounded-lg p-6 border-2 border-gray-400 shadow-sm hover:shadow-md transition">
+              <div className="flex flex-col items-center justify-center rounded-lg p-6  shadow-lg hover:shadow-md transition">
                 <FontAwesomeIcon
                   icon="fa-solid fa-couch"
                   className="w-10 h-10 mb-3 text-amber-600"
@@ -281,7 +297,7 @@ const Home = () => {
               </div>
 
               {/* Parking */}
-              <div className="flex flex-col items-center justify-center  rounded-lg p-6 border-2 border-gray-400 shadow-sm hover:shadow-md transition">
+              <div className="flex flex-col items-center justify-center  rounded-lg p-6  shadow-lg hover:shadow-md transition">
                 <FontAwesomeIcon
                   icon="fa-solid fa-parking"
                   className="w-10 h-10 mb-3 text-amber-600"
@@ -290,7 +306,7 @@ const Home = () => {
               </div>
 
               {/* AC */}
-              <div className="flex flex-col items-center justify-center  rounded-lg p-6 border-2 border-gray-400 shadow-sm hover:shadow-md transition">
+              <div className="flex flex-col items-center justify-center  rounded-lg p-6  shadow-lg hover:shadow-md transition">
                 <FontAwesomeIcon
                   icon="fa-solid fa-wind"
                   className="w-10 h-10 mb-3 text-amber-600"
@@ -313,7 +329,7 @@ const Home = () => {
             <p className="subtitle">Location</p>
             <h2 className="page-title">Lokasi Resort Kami</h2>
           </div>
-
+              {/* bg-white w-full rounded-xl shadow-lg overflow-hidden mb-12 transition-all duration-300 hover:shadow-xl border border-stone-100 */}
           {/* Google Maps */}
           <div className="w-full flex justify-center items-center h-full overflow-hidden shadow-xl transition-all duration-300 hover:shadow-2xl ">
             <iframe
@@ -364,7 +380,7 @@ const Home = () => {
             modules={[Pagination, Autoplay]}
           >
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
+              <div className=" p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
                 <h1 className="text-2xl font-bold mb-2">
                   Pusat kota Banda Aceh, 5 KM
                 </h1>
@@ -384,7 +400,7 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
+              <div className=" p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
                 <h1 className="text-2xl font-bold mb-2">
                   Mesjid Raya Baiturrahman, 5 KM
                 </h1>
@@ -405,7 +421,7 @@ const Home = () => {
             </SwiperSlide>
 
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
+              <div className=" p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
                 <h1 className="text-2xl font-bold mb-2">
                   Bandara Sultan Iskandar Muda, 12 KM
                 </h1>
@@ -425,7 +441,7 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
+              <div className=" p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
                 <h1 className="text-2xl font-bold mb-2">
                   Pusat Wisata Tsunami Museum, 5 KM
                 </h1>
@@ -445,7 +461,7 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
+              <div className=" p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
                 <h1 className="text-2xl font-bold mb-2">
                   Pelabuhan Malahayati, 34 KM
                 </h1>
@@ -465,7 +481,7 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
+              <div className=" p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
                 <h1 className="text-2xl font-bold mb-2">
                   Pelabuhan Ulee Lheue, 10 KM
                 </h1>
@@ -486,7 +502,7 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
+              <div className=" p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
                 <h1 className="text-2xl font-bold mb-2">
                   RSUD dr. Zainoel Abidin, 7 KM
                 </h1>

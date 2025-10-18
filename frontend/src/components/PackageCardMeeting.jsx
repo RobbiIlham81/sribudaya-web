@@ -9,42 +9,28 @@ import "../swiper-styles.css";
 
 import { Autoplay, Pagination, Parallax } from "swiper/modules";
 
-const PackageCard = () => {
-  const weddingSlide = [
+const PackageCardMeeting = () => {
+  const MeetingSlide = [
     {
       id: 1,
-      src: "/images/booking/wedding-slide1.jpg",
-      alt: "wedding-slide1.jpg",
-      title: "Momen Romantis yang Abadi",
-      desc: "Rayakan awal kisah cinta Anda di tempat yang elegan dengan dekorasi menawan dan suasana penuh kehangatan.",
+      src: "/images/booking/meeting/meeting0.jpeg",
+      alt: "meeting.jpg",
+      title: "Meeting Room",
+      desc: "Ruang rapat modern dengan desain minimalis, dilengkapi TV, papan tulis, dan pencahayaan alami yang nyaman.",
     },
     {
       id: 2,
-      src: "/images/booking/wedding-slide2.jpg",
-      alt: "wedding-slide2.jpg",
-      title: "Venue Eksklusif",
-      desc: "Ruang yang luas dan indah, sempurna untuk berbagi kebahagiaan bersama keluarga dan sahabat.",
-    },
-    {
-      id: 3,
-      src: "/images/booking/wedding-slide3.jpg",
-      alt: "wedding-slide3.jpg",
-      title: "Pelayanan Profesional",
-      desc: "Tim berpengalaman siap membantu setiap detail agar hari istimewa Anda berjalan sempurna.",
-    },
-    {
-      id: 4,
-      src: "/images/booking/wedding-slide4.jpg",
-      alt: "wedding-slide4.jpg",
-      title: "Kenangan Tak Terlupakan",
-      desc: "Ciptakan momen indah yang akan dikenang sepanjang masa dengan paket pernikahan terbaik kami.",
-    },
+      src: "/images/booking/meeting/meeting.jpeg",
+      alt: "meeting0.jpg",
+      title: "Meeting Room Setup",
+      desc: "Tata ruang fleksibel untuk berbagai kebutuhan pertemuan, dari diskusi kecil hingga acara formal.",
+    }
   ];
 
   return (
     <div className="w-full overflow-hidden rounded-lg">
       <div className="wrapper ">
-        <div className="hero-slides h-[36rem] relative">
+        <div className="hero-slides h-[30rem] relative">
           <Swiper
             pagination={{
               dynamicBullets: true,
@@ -59,7 +45,7 @@ const PackageCard = () => {
             modules={[Pagination, Autoplay, Parallax]}
             className="mySwiper "
           >
-            {weddingSlide.map((slide, idx) => (
+            {MeetingSlide.map((slide, idx) => (
               <SwiperSlide key={idx} className="group">
                 <img
                   className="w-full h-full object-cover transition-transform transform duration-700 group-hover:scale-110"
@@ -90,4 +76,4 @@ const PackageCard = () => {
   );
 };
 
-export default PackageCard;
+export default PackageCardMeeting;

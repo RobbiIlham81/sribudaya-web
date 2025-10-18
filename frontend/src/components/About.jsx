@@ -178,7 +178,7 @@ const About = () => {
             </div>
 
             {/* Stats Section */}
-            <LazyDiv>
+            <LazyDiv className="bg-white shadow-lg">
               <div className="items-center justify-center"></div>
               <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 mb-16 animate-fade-up">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">

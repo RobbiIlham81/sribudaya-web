@@ -24,7 +24,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import PackageCard from "./PackageCard";
+import PackageCardMeeting from "./PackageCardMeeting";
+import PackageCardPool from "./PackageCardPool";
 // import { Link } from "react-router-dom";
 import LazyDiv from "./misc/LazyDiv";
 
@@ -469,157 +470,7 @@ const Booking = () => {
           </div>
         </div>
 
-        {/* Wedding Section */}
-        <div className="wedding-container my-8">
-          {/* title for Wedding section */}
-          <LazyDiv>
-            <div className="booking-title relative my-8 w-fit animate-fade-up">
-              <h2 className="subtitle text-left">WEDDING HALL</h2>
-              <h1 className="page-title">
-                Wedding Hall Modern <br /> Untuk Hari Special Anda
-              </h1>
-              <span className="absolute left-0 w-1/2 -bottom-4 h-[2px] bg-amber-600"></span>
-            </div>
-          </LazyDiv>
-
-          {/* wedding section description */}
-          <LazyDiv>
-            <div className="mb-8 w-fit animate-fade-right">
-              <p className="page-title-desc">
-                Wedding hall kami dilengkapi dengan fasilitas modern dan tata ruang yang fleksibel, cocok untuk resepsi kecil hingga besar. Kami menyediakan ruang yang nyaman dan tertata untuk mendukung hari spesial Anda.
-              </p>
-            </div>
-          </LazyDiv>
-
-          <PackageCard />
-
-          {/* Wedding package list section */}
-          <div className="wedding-package py-10 mt-12">
-            {/* Section Header */}
-            <LazyDiv>
-              <div className="text-center">
-                <div className="inline-block">
-                  <h2 className="subtitle animate-fade-left animate-delay-100">Wedding Package</h2>
-                  <h1 className="page-title !mb-4 animate-fade-right animate-delay-200">Our Wedding Package</h1>
-                </div>
-                <p className="page-title-desc max-w-2xl mx-auto animate-fade-left animate-delay-300 !mb-12">Explore our wedding package created for you</p>
-              </div>
-            </LazyDiv>
-
-            <div className="wrapper max-w-6xl mx-auto flex justify-center items-center gap-2">
-              <Swiper
-                pagination={{
-                  dynamicBullets: true,
-                }}
-                spaceBetween={20}
-                breakpoints={{
-                  320: { slidesPerView: 1 },
-                  640: { slidesPerView: 2 },
-                }}
-                modules={[Pagination]}
-                className="myWeddingPackageSwiper"
-              >
-                <SwiperSlide>
-                  <div className="card bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
-                    <a href="/images/booking/silver-package.png" data-fancybox="wedding-gallery" data-caption="Silver Package">
-                      <img src="/images/booking/silver-package.png" alt="silver package" className="w-full h-48 object-cover" />
-                    </a>
-                    <div className="p-4 text-left bg-dark text-white flex flex-col flex-grow">
-                      <h3 className="card-normal-title font-semibold mb-2 !text-white">Silver Wedding Package</h3>
-                      {/* <p className="  ">
-                        Perfect for intimate weddings with essential services
-                        included.
-                      </p> */}
-                      <a href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20paket%20wedding%20silver" target="_blank" rel="noopener noreferrer" className="terracotaa-btn mt-24 md:text-xl">
-                        <span className="text-2xl pr-1">
-                          <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
-                        </span>
-                        Booking
-                      </a>
-                    </div>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div className="card bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
-                    <a href="/images/booking/platinum-package.png" data-fancybox="wedding-gallery" data-caption="Platinum Package">
-                      <img src="/images/booking/platinum-package.png" alt="platinum package wedding" className="w-full h-48 object-cover" />
-                    </a>
-                    <div className="p-4 text-left bg-dark text-white flex flex-col flex-grow">
-                      <h3 className="card-normal-title mb-2">Platinum Wedding Package</h3>
-                      {/* <p className=" ">
-                        A luxurious package for couples who want premium
-                        arrangements.
-                      </p> */}
-                      <a href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20paket%20wedding%20platinum" target="_blank" rel="noopener noreferrer" className="terracotaa-btn mt-24 md:text-xl">
-                        <span className="text-2xl pr-1">
-                          <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
-                        </span>
-                        Booking
-                      </a>
-                    </div>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div className="card bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
-                    <a href="/images/booking/gold-package.png" data-fancybox="wedding-gallery" data-caption="Gold Package">
-                      <img src="/images/booking/gold-package.png" alt="gold package wedding" className="w-full h-48 object-cover" />
-                    </a>
-                    <div className="p-4 text-left bg-dark text-white flex flex-col flex-grow">
-                      <h3 className="card-normal-title mb-2">Gold Wedding Package</h3>
-                      {/* <p className=" ">
-                        Balanced elegance and value, designed for medium-size
-                        weddings.
-                      </p> */}
-                      <a href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20paket%20wedding%20gold" target="_blank" rel="noopener noreferrer" className="terracotaa-btn mt-24 md:text-xl">
-                        <span className="text-2xl pr-1">
-                          <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
-                        </span>
-                        Booking
-                      </a>
-                    </div>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div className="card bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow h-full flex flex-col">
-                    <a href="/images/booking/royal-package.png" data-fancybox="wedding-gallery" data-caption="Royal Package">
-                      <img src="/images/booking/royal-package.png" alt="royal package wedding" className="w-full h-48 object-cover" />
-                    </a>
-                    <div className="p-4 text-left bg-dark text-white flex flex-col flex-grow">
-                      <h3 className="card-normal-title mb-2">Royal Wedding Package</h3>
-                      {/* <p className=" ">
-                        The ultimate fairy-tale experience with every luxury
-                        included.
-                      </p> */}
-                      <a href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20paket%20wedding%20royal" target="_blank" rel="noopener noreferrer" className="terracotaa-btn mt-24 md:text-xl">
-                        <span className="text-2xl pr-1">
-                          <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
-                        </span>
-                        Booking
-                      </a>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-            </div>
-
-            <LazyDiv>
-              <div className="w-full flex justify-center items-center mt-12 animate-fade-up">
-                <a target="_blank" rel="noreferrer" href="https://instagram.com/sribudaya_resortaceh" className="terracotaa-btn flex items-center">
-                  <span>
-                    <FontAwesomeIcon icon="fa-brands fa-instagram" className="text-3xl"></FontAwesomeIcon>
-                  </span>
-                  Lihat foto wedding lainnya di Instagram
-                </a>
-              </div>
-            </LazyDiv>
-          </div>
-          {/* End of Wedding package list section */}
-        </div>
-
-        {/* title for Swimming pool section */}
+        {/* title for Meeting section */}
         <LazyDiv>
           <div className="booking-title relative my-8 w-fit animate-fade-up">
             <h2 className="subtitle text-left">Meeting Room</h2>
@@ -629,12 +480,14 @@ const Booking = () => {
             <span className="absolute left-0 w-1/2 -bottom-4 h-[2px] bg-amber-600"></span>
           </div>
         </LazyDiv>
-        {/* Swimming pool section description */}
+        {/* Meeting section description */}
         <LazyDiv>
           <div className="mb-8 w-fit animate-fade-right">
             <p className="page-title-desc">Ruang meeting yang dilengkapi dengan alat presentasi, tata ruang yang fleksibel, serta suasana kondusif untuk mendukung kelancaran rapat, seminar, atau acara perusahaan.</p>
           </div>
         </LazyDiv>
+
+        <PackageCardMeeting />
 
         {/* Meeting Room Section */}
         <div className="wrapper max-w-6xl mx-auto px-4 py-8">
@@ -653,13 +506,41 @@ const Booking = () => {
             modules={[Pagination]}
             className="myMeetingPackageSwiper"
           >
+
+            <div>
+            <div className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
+                {/* Image Gallery */}
+                    <div
+                      ref={fancyboxRefRoom1}
+                      className="grid grid-cols-2 gap-3 p-5 lg:w-2/5 bg-stone-50"
+                    >
+                      <img
+                        data-fancybox="gallery"
+                        src="/images/booking/family-suite01_compressed.jpg"
+                        alt="Family Suite"
+                        className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm"
+                      />
+                      <img
+                        data-fancybox="gallery"
+                        src="/images/booking/family-suite02_compressed.jpg"
+                        alt="Family Suite"
+                        className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm"
+                      />
+                    </div>
+            </div>
+                  
             <SwiperSlide className="!h-auto">
               <div className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
+                
                 <div className="p-6 flex-grow flex flex-col">
                   <div className="mb-6">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
-                    <h3 className="text-xl md:text-2xl font-bold text-black mb-2">HALF DAY MEETING A PACKAGE</h3>
-                    <div className="text-amber-600 font-bold text-lg">IDR 150.000/PAX</div>
+                    <h3 className="text-xl md:text-2xl font-bold text-black mb-2">
+                      Half Day Meeting A Package
+                    </h3>
+                    <div className="text-amber-600 font-bold text-lg">
+                      IDR 150.000/PAX
+                    </div>
                   </div>
 
                   <ul className="space-y-3 mb-6 flex-grow list-none p-0 m-0">
@@ -749,8 +630,12 @@ const Booking = () => {
                 <div className="p-6 flex-grow flex flex-col">
                   <div className="mb-6">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
-                    <h3 className="text-xl md:text-2xl font-bold text-black mb-2">HALF DAY MEETING B PACKAGE</h3>
-                    <div className="text-amber-600 font-bold text-lg">IDR 200.000/PAX</div>
+                    <h3 className="text-xl md:text-2xl font-bold text-black mb-2">
+                      Half Day Meeting B Package
+                    </h3>
+                    <div className="text-amber-600 font-bold text-lg">
+                      IDR 200.000/PAX
+                    </div>
                   </div>
 
                   <ul className="space-y-3 mb-6 flex-grow list-none p-0 m-0">
@@ -849,8 +734,12 @@ const Booking = () => {
                 <div className="p-6 flex-grow flex flex-col">
                   <div className="mb-6">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
-                    <h3 className="text-xl md:text-2xl font-bold text-black mb-2">HALF DAY MEETING C PACKAGE</h3>
-                    <div className="text-amber-600 font-bold text-lg">IDR 250.000/PAX</div>
+                    <h3 className="text-xl md:text-2xl font-bold text-black mb-2">
+                      Half Day Meeting C Package
+                    </h3>
+                    <div className="text-amber-600 font-bold text-lg">
+                      IDR 250.000/PAX
+                    </div>
                   </div>
 
                   <ul className="space-y-3 mb-6 flex-grow list-none p-0 m-0">
@@ -949,8 +838,12 @@ const Booking = () => {
                 <div className="p-6 flex-grow flex flex-col">
                   <div className="mb-6">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
-                    <h3 className="text-xl md:text-2xl font-bold text-black mb-2">ONE DAY MEETING PACKAGE</h3>
-                    <div className="text-amber-600 font-bold text-lg">IDR 400.000/PAX</div>
+                    <h3 className="text-xl md:text-2xl font-bold text-black mb-2">
+                      One Day Meeting Package
+                    </h3>
+                    <div className="text-amber-600 font-bold text-lg">
+                      IDR 400.000/PAX
+                    </div>
                   </div>
 
                   <ul className="space-y-3 mb-6 flex-grow list-none p-0 m-0">
@@ -1052,6 +945,7 @@ const Booking = () => {
                 </div>
               </div>
             </SwiperSlide>
+            </div>
           </Swiper>
         </div>
         {/* End of meeting package list section */}
@@ -1067,12 +961,15 @@ const Booking = () => {
               <span className="absolute left-0 w-1/2 -bottom-4 h-[2px] bg-amber-600"></span>
             </div>
           </LazyDiv>
+
           {/* Swimming pool section description */}
           <LazyDiv>
             <div className="mb-8 w-fit animate-fade-right">
               <p className="page-title-desc">Nikmati kolam renang dengan ukuran luas, air yang selalu terjaga kebersihannya, dan area aman dan nyaman bagi anda dan keluarga.</p>
             </div>
           </LazyDiv>
+
+          <PackageCardPool />
 
           {/* swimmingpool package list */}
           <div className="wrapper max-w-6xl mx-auto px-4 py-8">
@@ -1167,7 +1064,10 @@ const Booking = () => {
                     <ul className="space-y-4 mb-6 flex-grow list-none p-0 m-0">
                       <li className="flex items-start">
                         <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                          <FontAwesomeIcon icon="fa-solid fa-person-swimming" className="text-lg" />
+                          <FontAwesomeIcon  
+                            icon="fa-solid fa-person-swimming"
+                            className="text-lg"
+                          />
                         </div>
                         <div className="text-gray-800">
                           <span className="font-medium">Aktivitas:</span> Berenang saja selama 3 jam
@@ -1230,8 +1130,9 @@ const Booking = () => {
               </SwiperSlide>
             </Swiper>
           </div>
+
+          {/* End of swimming package list section */}
         </div>
-        {/* End of swimming package list section */}
 
         {/* Accordion section */}
         <div className="accordion-container my-16">

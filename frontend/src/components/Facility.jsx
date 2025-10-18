@@ -11,10 +11,18 @@ const facilities = [
     category: "Recreation",
   },
   {
-    title: "Coffee Shop",
-    description: "Nikmati racikan Coffee dan aneka minuman segar, dan hidangan lainnya. Dengan suasana nyaman dan estetik tempat ideal untuk bersantai dan menikmati kebersamaan.",
+    title: "Indoor Coffee Shop",
+    description:
+      "Nikmati racikan Coffee dan aneka minuman segar, dan hidangan lainnya. Dengan suasana nyaman dan estetik tempat ideal untuk bersantai dan menikmati kebersamaan.",
     image: "images/facility/coffee shop.jpeg",
-    category: "Dining",
+    category: "eating and drinking",
+  },
+  {
+    title: "Outdoor Coffee Shop",
+    description:
+      "Nikmati secangkir kopi di tengah kesegaran alam terbuka. Suasana santai di luar ruangan ini adalah tempat yang pas untuk bertemu teman atau menikmati hidangan kami dengan pemandangan yang menyejukkan.",
+    image: "images/facility/outdoor_caffe.jpeg",
+    category: "eating and drinking",
   },
   {
     title: "Homestay & Kamar Nyaman",

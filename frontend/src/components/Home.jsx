@@ -134,41 +134,65 @@ const Home = () => {
       <section id="social-media" className="mb-8">
         <div className="sosmed-container flex justify-center items-center flex-col py-10 h-auto">
           {/* partner title */}
-          <LazyDiv>
+          {/* <LazyDiv>
             <div className="text-center mb-12 animate-fade-up">
               <h2 className="subtitle">Partner Sites</h2>
               <h2 className="page-title">Anda dapat menemukan kami di situs pemesanan populer.</h2>
             </div>
-          </LazyDiv>
+          </LazyDiv> */}
 
           {/* Sosmed Icons */}
-          <LazyDiv>
+          {/* <LazyDiv>
             <div className="social-media-icon h-auto flex justify-center items-center flex-wrap gap-10 px-5 md:gap-24">
               <div className="transition-transform duration-200 hover:scale-125 animate-jump-in animate-delay-100">
                 <a href="https://www.booking.com/Share-DlyFsCQ" target="_blank" rel="noreferrer">
                   <img src="bookingcom.png" className="w-14 h-14 md:w-16 md:h-16" alt="bookingcom.png" />
                 </a>
               </div>
+
               <div className="transition-transform duration-200 hover:scale-125 animate-jump-in animate-delay-200">
                 <a
                   href="https://www.tiket.com/hotel/indonesia/sribudaya-resort-708001724122959169?checkin=2024-08-26&checkout=2024-08-27&adult=1&room=1&utm_external=organic&utm_medium=hotel_pdp%3Bshare_button"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="tiketcom.png" className="w-40 md:w-56 md:h-16" alt="bookingcom.png" />
+                  <img
+                    src="tiketcom.png"
+                    className="w-40 md:w-56 md:h-16"
+                    alt="tiketcom.png"
+                  />
                 </a>
               </div>
+
               <div className="transition-transform duration-200 hover:scale-125 animate-jump-in animate-delay-300">
                 <a
                   href="https://www.agoda.com/sribudaya-resort/hotel/aceh-id.html?checkin=2024-11-27&checkout=2024-11-28&los=1&rooms=1&adults=1&children=0&cid=1924241&searchrequestid=3609c674-949e-4cd3-a91a-8881b3b76029&tag=op7d38f94ba1cd458aa3f2c809cc92e169SG&ds=AQO4US3VCi%2FiSHag"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="agoda.png" className="w-auto h-16" alt="bookingcom.png" />
+                  <img
+                    src="agoda.png"
+                    className="w-auto h-16"
+                    alt="agoda.png"
+                  />
+                </a>
+              </div>
+              
+              <div className="transition-transform duration-200 hover:scale-125 animate-jump-in animate-delay-400">
+                <a
+                  href="https://www.traveloka.com/id-id/hotel/indonesia/sribudaya-resort-900000120406870"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="traveloka.png"
+                    className="w-40 md:w-56 md:h-16"
+                    alt="traveloka.png"
+                  />
                 </a>
               </div>
             </div>
-          </LazyDiv>
+          </LazyDiv> */}
         </div>
       </section>
       {/* Partner with section end */}
@@ -193,26 +217,38 @@ const Home = () => {
             <div className="grid grid-cols-2 gap-6 animate-fade-left">
               {/* Wifi */}
 
-              <div className="flex flex-col items-center justify-center  rounded-lg p-6 border-2 border-gray-400 shadow-sm hover:shadow-md transition">
-                <FontAwesomeIcon icon="fa-solid fa-wifi" className="w-10 h-10 mb-3 text-amber-600" />
+              <div className="flex flex-col items-center justify-center  rounded-lg p-6  shadow-lg hover:shadow-md transition">
+                <FontAwesomeIcon
+                  icon="fa-solid fa-wifi"
+                  className="w-10 h-10 mb-3 text-amber-600"
+                />
                 <p className="text-gray-700 font-medium">Free Wifi</p>
               </div>
 
               {/* Furnishing */}
-              <div className="flex flex-col items-center justify-center rounded-lg p-6 border-2 border-gray-400 shadow-sm hover:shadow-md transition">
-                <FontAwesomeIcon icon="fa-solid fa-couch" className="w-10 h-10 mb-3 text-amber-600" />
+              <div className="flex flex-col items-center justify-center rounded-lg p-6  shadow-lg hover:shadow-md transition">
+                <FontAwesomeIcon
+                  icon="fa-solid fa-couch"
+                  className="w-10 h-10 mb-3 text-amber-600"
+                />
                 <p className="text-gray-700 font-medium">Fine Furnishing</p>
               </div>
 
               {/* Parking */}
-              <div className="flex flex-col items-center justify-center  rounded-lg p-6 border-2 border-gray-400 shadow-sm hover:shadow-md transition">
-                <FontAwesomeIcon icon="fa-solid fa-parking" className="w-10 h-10 mb-3 text-amber-600" />
+              <div className="flex flex-col items-center justify-center  rounded-lg p-6  shadow-lg hover:shadow-md transition">
+                <FontAwesomeIcon
+                  icon="fa-solid fa-parking"
+                  className="w-10 h-10 mb-3 text-amber-600"
+                />
                 <p className="text-gray-700 font-medium">Private Parking</p>
               </div>
 
               {/* AC */}
-              <div className="flex flex-col items-center justify-center  rounded-lg p-6 border-2 border-gray-400 shadow-sm hover:shadow-md transition">
-                <FontAwesomeIcon icon="fa-solid fa-wind" className="w-10 h-10 mb-3 text-amber-600" />
+              <div className="flex flex-col items-center justify-center  rounded-lg p-6  shadow-lg hover:shadow-md transition">
+                <FontAwesomeIcon
+                  icon="fa-solid fa-wind"
+                  className="w-10 h-10 mb-3 text-amber-600"
+                />
                 <p className="text-gray-700 font-medium">Air Conditioning</p>
               </div>
             </div>
@@ -228,7 +264,7 @@ const Home = () => {
             <p className="subtitle">Location</p>
             <h2 className="page-title">Lokasi Resort Kami</h2>
           </div>
-
+              {/* bg-white w-full rounded-xl shadow-lg overflow-hidden mb-12 transition-all duration-300 hover:shadow-xl border border-stone-100 */}
           {/* Google Maps */}
           <div className="w-full flex justify-center items-center h-full overflow-hidden shadow-xl transition-all duration-300 hover:shadow-2xl ">
             <iframe
@@ -272,8 +308,10 @@ const Home = () => {
             modules={[Pagination, Autoplay]}
           >
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
-                <h1 className="text-2xl font-bold mb-2">Pusat kota Banda Aceh, 5 KM</h1>
+              <div className=" p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
+                <h1 className="text-2xl font-bold mb-2">
+                  Pusat kota Banda Aceh, 5 KM
+                </h1>
                 <p className="page-title-desc !text-base  mb-5">
                   Pusat kota dengan berbagai fasilitas perdagangan, perkantoran, dan pusat kuliner khas Aceh. Mudah diakses melalui jalan utama dengan waktu tempuh sekitar 10 menit berkendara.
                 </p>
@@ -283,45 +321,91 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
-                <h1 className="text-2xl font-bold mb-2">Mesjid Raya Baiturrahman, 5 KM</h1>
-                <p className="page-title-desc !text-base  mb-5">Masjid bersejarah dan ikonik Banda Aceh dengan arsitektur yang memukau. Simbol spiritual dan budaya Aceh yang wajib dikunjungi, mudah dijangkau dalam 13 menit perjalanan.</p>
-                <a href="https://maps.app.goo.gl/UL6635rYHt7oUsgz7" className="terracotaa-btn" target="_blank" rel="noreferrer">
+              <div className=" p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
+                <h1 className="text-2xl font-bold mb-2">
+                  Mesjid Raya Baiturrahman, 5 KM
+                </h1>
+                <p className="page-title-desc !text-base  mb-5">
+                  Masjid bersejarah dan ikonik Banda Aceh dengan arsitektur yang
+                  memukau. Simbol spiritual dan budaya Aceh yang wajib
+                  dikunjungi, mudah dijangkau dalam 13 menit perjalanan.
+                </p>
+                <a
+                  href="https://maps.app.goo.gl/UL6635rYHt7oUsgz7"
+                  className="terracotaa-btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Visit map
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
-                <h1 className="text-2xl font-bold mb-2">Bandara Sultan Iskandar Muda, 12 KM</h1>
-                <p className="page-title-desc !text-base  mb-5">Bandara internasional utama Aceh yang melayani penerbangan domestik dan internasional. Perjalanan dari resort memakan waktu sekitar 20 menit melalui jalur lingkar kota.</p>
-                <a href="https://maps.app.goo.gl/1q9f7TL25Eypazoy9" className="terracotaa-btn" target="_blank" rel="noreferrer">
+              <div className=" p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
+                <h1 className="text-2xl font-bold mb-2">
+                  Bandara Sultan Iskandar Muda, 12 KM
+                </h1>
+                <p className="page-title-desc !text-base  mb-5">
+                  Bandara internasional utama Aceh yang melayani penerbangan
+                  domestik dan internasional. Perjalanan dari resort memakan
+                  waktu sekitar 20 menit melalui jalur lingkar kota.
+                </p>
+                <a
+                  href="https://maps.app.goo.gl/1q9f7TL25Eypazoy9"
+                  className="terracotaa-btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Visit map
                 </a>
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
-                <h1 className="text-2xl font-bold mb-2">Pusat Wisata Tsunami Museum, 5 KM</h1>
-                <p className="page-title-desc !text-base  mb-5">Museum Tsunami Aceh dan kawasan wisata sejarah terdekat. Lokasi strategis untuk mengunjungi destinasi wisata edukasi dan sejarah yang menawan di Banda Aceh.</p>
-                <a href="https://maps.app.goo.gl/s3sP1AsGQC6nWFKv6" className="terracotaa-btn" target="_blank" rel="noreferrer">
+              <div className=" p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
+                <h1 className="text-2xl font-bold mb-2">
+                  Pusat Wisata Tsunami Museum, 5 KM
+                </h1>
+                <p className="page-title-desc !text-base  mb-5">
+                  Museum Tsunami Aceh dan kawasan wisata sejarah terdekat.
+                  Lokasi strategis untuk mengunjungi destinasi wisata edukasi
+                  dan sejarah yang menawan di Banda Aceh.
+                </p>
+                <a
+                  href="https://maps.app.goo.gl/s3sP1AsGQC6nWFKv6"
+                  className="terracotaa-btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Visit map
                 </a>
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
-                <h1 className="text-2xl font-bold mb-2">Pelabuhan Malahayati, 34 KM</h1>
-                <p className="page-title-desc !text-base  mb-5">Pelabuhan utama Banda Aceh yang menghubungkan dengan berbagai destinasi di Sumatera dan luar pulau. Akses transportasi laut untuk perjalanan wisata dan bisnis.</p>
-                <a href="https://maps.app.goo.gl/7K6R87m3EZfnM9Tq9" className="terracotaa-btn" target="_blank" rel="noreferrer">
+              <div className=" p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
+                <h1 className="text-2xl font-bold mb-2">
+                  Pelabuhan Malahayati, 34 KM
+                </h1>
+                <p className="page-title-desc !text-base  mb-5">
+                  Pelabuhan utama Banda Aceh yang menghubungkan dengan berbagai
+                  destinasi di Sumatera dan luar pulau. Akses transportasi laut
+                  untuk perjalanan wisata dan bisnis.
+                </p>
+                <a
+                  href="https://maps.app.goo.gl/7K6R87m3EZfnM9Tq9"
+                  className="terracotaa-btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Visit map
                 </a>
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
-                <h1 className="text-2xl font-bold mb-2">Pelabuhan Ulee Lheue, 10 KM</h1>
+              <div className=" p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
+                <h1 className="text-2xl font-bold mb-2">
+                  Pelabuhan Ulee Lheue, 10 KM
+                </h1>
                 <p className="page-title-desc !text-base  mb-5">
                   Pelabuhan wisata dan ferry menuju Pulau Weh (Sabang). Gerbang utama untuk menjelajahi keindahan bawah laut dan pantai eksotis Sabang dengan fasilitas transportasi laut yang lengkap.
                 </p>
@@ -331,10 +415,21 @@ const Home = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="bg-main">
-              <div className="card border-2 border-gray-500 p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
-                <h1 className="text-2xl font-bold mb-2">RSUD dr. Zainoel Abidin, 7 KM</h1>
-                <p className="page-title-desc !text-base  mb-5">Rumah sakit rujukan utama Provinsi Aceh dengan fasilitas medis lengkap dan pelayanan 24 jam. Menjadi jaminan keamanan kesehatan selama menginap.</p>
-                <a href="https://maps.app.goo.gl/PmzqPoZGvWPUK5y8A" className="terracotaa-btn" target="_blank" rel="noreferrer">
+              <div className=" p-8 w-full rounded-lg shadow-lg min-h-[260px] md:min-h-[230px]">
+                <h1 className="text-2xl font-bold mb-2">
+                  RSUD dr. Zainoel Abidin, 7 KM
+                </h1>
+                <p className="page-title-desc !text-base  mb-5">
+                  Rumah sakit rujukan utama Provinsi Aceh dengan fasilitas medis
+                  lengkap dan pelayanan 24 jam. Menjadi jaminan keamanan
+                  kesehatan selama menginap.
+                </p>
+                <a
+                  href="https://maps.app.goo.gl/PmzqPoZGvWPUK5y8A"
+                  className="terracotaa-btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Visit map
                 </a>
               </div>

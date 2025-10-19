@@ -79,7 +79,7 @@ const Booking = () => {
       {/* Slide section */}
       <div className="w-full ">
         <div className="wrapper">
-          <div className="hero-slides h-[80vh] relative">
+          <div className="hero-slides h-[80vh] relative ">
             <Swiper
               // pagination={{
               //   dynamicBullets: false,
@@ -506,445 +506,414 @@ const Booking = () => {
             modules={[Pagination]}
             className="myMeetingPackageSwiper"
           >
-
             <div>
-            <div className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
+              <div className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
                 {/* Image Gallery */}
-                    <div
-                      ref={fancyboxRefRoom1}
-                      className="grid grid-cols-2 gap-3 p-5 lg:w-2/5 bg-stone-50"
-                    >
-                      <img
-                        data-fancybox="gallery"
-                        src="/images/booking/family-suite01_compressed.jpg"
-                        alt="Family Suite"
-                        className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm"
-                      />
-                      <img
-                        data-fancybox="gallery"
-                        src="/images/booking/family-suite02_compressed.jpg"
-                        alt="Family Suite"
-                        className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm"
-                      />
-                    </div>
-            </div>
-                  
-            <SwiperSlide className="!h-auto">
-              <div className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
-                
-                <div className="p-6 flex-grow flex flex-col">
-                  <div className="mb-6">
-                    <div className="w-12 h-1 bg-amber-600 mb-4"></div>
-                    <h3 className="text-xl md:text-2xl font-bold text-black mb-2">
-                      Half Day Meeting A Package
-                    </h3>
-                    <div className="text-amber-600 font-bold text-lg">
-                      IDR 150.000/PAX
-                    </div>
-                  </div>
-
-                  <ul className="space-y-3 mb-6 flex-grow list-none p-0 m-0">
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-check-circle" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Penggunaan ruangan:</span> 5 jam (hingga pukul 22.00 WIB)
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-mug-hot" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Coffee break:</span> 1 kali + snack
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-bottle-water" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Air mineral:</span> Gratis
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-microphone" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Sound system:</span> 2 mikrofon nirkabel
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-tv" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Smart TV:</span> 1 unit
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-wifi" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Internet:</span> Wi-Fi
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-snowflake" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Pendingin ruangan:</span> AC
-                      </div>
-                    </li>
-                  </ul>
-
-                  <div className="mt-auto">
-                    <a
-                      href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
-                    >
-                      <span className="text-xl mr-2">
-                        <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
-                      </span>
-                      Booking Sekarang
-                    </a>
-                  </div>
+                <div ref={fancyboxRefRoom1} className="grid grid-cols-2 gap-3 p-5 lg:w-2/5 bg-stone-50">
+                  <img data-fancybox="gallery" src="/images/booking/family-suite01_compressed.jpg" alt="Family Suite" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
+                  <img data-fancybox="gallery" src="/images/booking/family-suite02_compressed.jpg" alt="Family Suite" className="w-full h-48 object-cover rounded-lg hover:opacity-90 transition-opacity cursor-pointer shadow-sm" />
                 </div>
               </div>
-            </SwiperSlide>
 
-            <SwiperSlide className="!h-auto">
-              <div className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
-                <div className="p-6 flex-grow flex flex-col">
-                  <div className="mb-6">
-                    <div className="w-12 h-1 bg-amber-600 mb-4"></div>
-                    <h3 className="text-xl md:text-2xl font-bold text-black mb-2">
-                      Half Day Meeting B Package
-                    </h3>
-                    <div className="text-amber-600 font-bold text-lg">
-                      IDR 200.000/PAX
+              <SwiperSlide className="!h-auto">
+                <div className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
+                  <div className="p-6 flex-grow flex flex-col">
+                    <div className="mb-6">
+                      <div className="w-12 h-1 bg-amber-600 mb-4"></div>
+                      <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Half Day Meeting A Package</h3>
+                      <div className="text-amber-600 font-bold text-lg">IDR 150.000/PAX</div>
+                    </div>
+
+                    <ul className="space-y-3 mb-6 flex-grow list-none p-0 m-0">
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-check-circle" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Penggunaan ruangan:</span> 5 jam (hingga pukul 22.00 WIB)
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-mug-hot" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Coffee break:</span> 1 kali + snack
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-bottle-water" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Air mineral:</span> Gratis
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-microphone" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Sound system:</span> 2 mikrofon nirkabel
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-tv" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Smart TV:</span> 1 unit
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-wifi" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Internet:</span> Wi-Fi
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-snowflake" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Pendingin ruangan:</span> AC
+                        </div>
+                      </li>
+                    </ul>
+
+                    <div className="mt-auto">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
+                      >
+                        <span className="text-xl mr-2">
+                          <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
+                        </span>
+                        Booking Sekarang
+                      </a>
                     </div>
                   </div>
-
-                  <ul className="space-y-3 mb-6 flex-grow list-none p-0 m-0">
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-check-circle" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Penggunaan ruangan:</span> 5 jam (hingga pukul 22.00 WIB)
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-mug-hot" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Coffee break:</span> 1 kali
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-utensils" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Makan siang:</span> 1 kali (tanpa snack tambahan)
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-bottle-water" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Air mineral:</span> Gratis
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-microphone" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Sound system:</span> 2 mikrofon nirkabel
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-tv" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Smart TV:</span> 1 unit
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-wifi" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Internet:</span> Wi-Fi
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-snowflake" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Pendingin ruangan:</span> AC
-                      </div>
-                    </li>
-                  </ul>
-
-                  <div className="mt-auto">
-                    <a
-                      href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20B"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center terracotaa-btn  text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
-                    >
-                      <span className="text-xl mr-2">
-                        <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
-                      </span>
-                      Booking Sekarang
-                    </a>
-                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
 
-            <SwiperSlide className="!h-auto">
-              <div className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
-                <div className="p-6 flex-grow flex flex-col">
-                  <div className="mb-6">
-                    <div className="w-12 h-1 bg-amber-600 mb-4"></div>
-                    <h3 className="text-xl md:text-2xl font-bold text-black mb-2">
-                      Half Day Meeting C Package
-                    </h3>
-                    <div className="text-amber-600 font-bold text-lg">
-                      IDR 250.000/PAX
+              <SwiperSlide className="!h-auto">
+                <div className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
+                  <div className="p-6 flex-grow flex flex-col">
+                    <div className="mb-6">
+                      <div className="w-12 h-1 bg-amber-600 mb-4"></div>
+                      <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Half Day Meeting B Package</h3>
+                      <div className="text-amber-600 font-bold text-lg">IDR 200.000/PAX</div>
+                    </div>
+
+                    <ul className="space-y-3 mb-6 flex-grow list-none p-0 m-0">
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-check-circle" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Penggunaan ruangan:</span> 5 jam (hingga pukul 22.00 WIB)
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-mug-hot" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Coffee break:</span> 1 kali
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-utensils" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Makan siang:</span> 1 kali (tanpa snack tambahan)
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-bottle-water" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Air mineral:</span> Gratis
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-microphone" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Sound system:</span> 2 mikrofon nirkabel
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-tv" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Smart TV:</span> 1 unit
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-wifi" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Internet:</span> Wi-Fi
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-snowflake" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Pendingin ruangan:</span> AC
+                        </div>
+                      </li>
+                    </ul>
+
+                    <div className="mt-auto">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20B"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center terracotaa-btn  text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
+                      >
+                        <span className="text-xl mr-2">
+                          <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
+                        </span>
+                        Booking Sekarang
+                      </a>
                     </div>
                   </div>
-
-                  <ul className="space-y-3 mb-6 flex-grow list-none p-0 m-0">
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-check-circle" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Penggunaan ruangan:</span> 5 jam (hingga pukul 22.00 WIB)
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-mug-hot" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Coffee break:</span> 1 kali
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-utensils" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Makan siang:</span> 1 kali + snack
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-bottle-water" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Air mineral:</span> Gratis
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-microphone" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Sound system:</span> 2 mikrofon nirkabel
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-tv" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Smart TV:</span> 1 unit
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-wifi" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Internet:</span> Wi-Fi
-                      </div>
-                    </li>
-
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-snowflake" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Pendingin ruangan:</span> AC
-                      </div>
-                    </li>
-                  </ul>
-
-                  <div className="mt-auto">
-                    <a
-                      href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20C"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center terracotaa-btn  text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
-                    >
-                      <span className="text-xl mr-2">
-                        <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
-                      </span>
-                      Booking Sekarang
-                    </a>
-                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
 
-            <SwiperSlide className="!h-auto">
-              <div className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
-                <div className="p-6 flex-grow flex flex-col">
-                  <div className="mb-6">
-                    <div className="w-12 h-1 bg-amber-600 mb-4"></div>
-                    <h3 className="text-xl md:text-2xl font-bold text-black mb-2">
-                      One Day Meeting Package
-                    </h3>
-                    <div className="text-amber-600 font-bold text-lg">
-                      IDR 400.000/PAX
+              <SwiperSlide className="!h-auto">
+                <div className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
+                  <div className="p-6 flex-grow flex flex-col">
+                    <div className="mb-6">
+                      <div className="w-12 h-1 bg-amber-600 mb-4"></div>
+                      <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Half Day Meeting C Package</h3>
+                      <div className="text-amber-600 font-bold text-lg">IDR 250.000/PAX</div>
+                    </div>
+
+                    <ul className="space-y-3 mb-6 flex-grow list-none p-0 m-0">
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-check-circle" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Penggunaan ruangan:</span> 5 jam (hingga pukul 22.00 WIB)
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-mug-hot" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Coffee break:</span> 1 kali
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-utensils" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Makan siang:</span> 1 kali + snack
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-bottle-water" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Air mineral:</span> Gratis
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-microphone" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Sound system:</span> 2 mikrofon nirkabel
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-tv" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Smart TV:</span> 1 unit
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-wifi" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Internet:</span> Wi-Fi
+                        </div>
+                      </li>
+
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-snowflake" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Pendingin ruangan:</span> AC
+                        </div>
+                      </li>
+                    </ul>
+
+                    <div className="mt-auto">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20C"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center terracotaa-btn  text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
+                      >
+                        <span className="text-xl mr-2">
+                          <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
+                        </span>
+                        Booking Sekarang
+                      </a>
                     </div>
                   </div>
+                </div>
+              </SwiperSlide>
 
-                  <ul className="space-y-3 mb-6 flex-grow list-none p-0 m-0">
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-check-circle" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Penggunaan ruangan:</span> 10 jam (hingga pukul 22.00 WIB)
-                      </div>
-                    </li>
+              <SwiperSlide className="!h-auto">
+                <div className="bg-white rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
+                  <div className="p-6 flex-grow flex flex-col">
+                    <div className="mb-6">
+                      <div className="w-12 h-1 bg-amber-600 mb-4"></div>
+                      <h3 className="text-xl md:text-2xl font-bold text-black mb-2">One Day Meeting Package</h3>
+                      <div className="text-amber-600 font-bold text-lg">IDR 400.000/PAX</div>
+                    </div>
 
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-mug-hot" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Coffee break:</span> 2 kali + snack
-                      </div>
-                    </li>
+                    <ul className="space-y-3 mb-6 flex-grow list-none p-0 m-0">
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-check-circle" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Penggunaan ruangan:</span> 10 jam (hingga pukul 22.00 WIB)
+                        </div>
+                      </li>
 
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-utensils" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Makan siang:</span> 1 kali
-                      </div>
-                    </li>
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-mug-hot" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Coffee break:</span> 2 kali + snack
+                        </div>
+                      </li>
 
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-plate-wheat" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Makan malam:</span> 1 kali
-                      </div>
-                    </li>
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-utensils" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Makan siang:</span> 1 kali
+                        </div>
+                      </li>
 
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-bottle-water" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Air mineral:</span> Gratis untuk 2 kali penyajian
-                      </div>
-                    </li>
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-plate-wheat" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Makan malam:</span> 1 kali
+                        </div>
+                      </li>
 
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-microphone" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Sound system:</span> 2 mikrofon nirkabel
-                      </div>
-                    </li>
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-bottle-water" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Air mineral:</span> Gratis untuk 2 kali penyajian
+                        </div>
+                      </li>
 
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-tv" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Smart TV:</span> 1 unit
-                      </div>
-                    </li>
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-microphone" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Sound system:</span> 2 mikrofon nirkabel
+                        </div>
+                      </li>
 
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-wifi" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Internet:</span> Wi-Fi
-                      </div>
-                    </li>
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-tv" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Smart TV:</span> 1 unit
+                        </div>
+                      </li>
 
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                        <FontAwesomeIcon icon="fa-solid fa-snowflake" className="text-lg" />
-                      </div>
-                      <div className="text-gray-800">
-                        <span className="font-medium">Pendingin ruangan:</span> AC
-                      </div>
-                    </li>
-                  </ul>
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-wifi" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Internet:</span> Wi-Fi
+                        </div>
+                      </li>
 
-                  <div className="mt-auto">
-                    <a
-                      href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20one%20day"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center terracotaa-btn  text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
-                    >
-                      <span className="text-xl mr-2">
-                        <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
-                      </span>
-                      Booking Sekarang
-                    </a>
+                      <li className="flex items-start">
+                        <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
+                          <FontAwesomeIcon icon="fa-solid fa-snowflake" className="text-lg" />
+                        </div>
+                        <div className="text-gray-800">
+                          <span className="font-medium">Pendingin ruangan:</span> AC
+                        </div>
+                      </li>
+                    </ul>
+
+                    <div className="mt-auto">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20one%20day"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center terracotaa-btn  text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
+                      >
+                        <span className="text-xl mr-2">
+                          <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
+                        </span>
+                        Booking Sekarang
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
             </div>
           </Swiper>
         </div>
@@ -1064,10 +1033,7 @@ const Booking = () => {
                     <ul className="space-y-4 mb-6 flex-grow list-none p-0 m-0">
                       <li className="flex items-start">
                         <div className="flex-shrink-0 mt-1 mr-3 text-amber-600">
-                          <FontAwesomeIcon  
-                            icon="fa-solid fa-person-swimming"
-                            className="text-lg"
-                          />
+                          <FontAwesomeIcon icon="fa-solid fa-person-swimming" className="text-lg" />
                         </div>
                         <div className="text-gray-800">
                           <span className="font-medium">Aktivitas:</span> Berenang saja selama 3 jam

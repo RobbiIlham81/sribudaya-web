@@ -132,7 +132,7 @@ const Navbar = () => {
                       <button
                         onClick={toggleBookingDropdown}
                         onMouseEnter={handleMouseEnter}
-                        className="flex items-center justify-between w-full py-2 px-3 text-[#e9e4dc] rounded-sm hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-amber-700 md:p-0 md:w-auto"
+                        className="flex items-center justify-between w-full py-2 px-3 text-black rounded-sm hover:bg-gray-700 md:hover:bg-transparent md:border-0 md:hover:text-amber-700 md:p-0 md:w-auto"
                       >
                         {item.label}
                         <svg className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-200 ${isBookingOpen ? "rotate-180" : ""}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">

@@ -24,6 +24,14 @@ const Wedding = () => {
 
   //Untuk gambar di gelery bisa di zoom
   const [selectedImg, setSelectedImg] = useState(null);
+  // Tutup modal dengan tombol ESC
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") setSelectedImg(null);
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
 
   // ganti gambar otomatis tiap 5 detik
   useEffect(() => {
@@ -39,7 +47,7 @@ const Wedding = () => {
       duration: 800,
       easing: "ease-in-out",
       once: true,
-      mirror: false
+      mirror: false,
     });
   }, []);
 
@@ -119,7 +127,7 @@ const Wedding = () => {
 
                   <div className="mt-auto">
                     <a
-                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
+                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Silver%20Package%20(1000 Pax)%20Daisy"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -152,13 +160,13 @@ const Wedding = () => {
                   <div className="mb-6">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Platinum Package (1000 Pax)</h3>
-                    <div className="text-amber-600 font-bold text-lg">Rp155.000.000,</div>
+                    <div className="text-amber-600 font-bold text-lg">Rp155.000.000,-</div>
                   </div>
                   <p className="text-gray-600 mb-4">Level premium untuk kesan lebih mewah.</p>
 
                   <div className="mt-auto">
                     <a
-                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
+                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Platinum%20Package%20(1000 Pax)%20Daisy"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -174,7 +182,17 @@ const Wedding = () => {
             </div>
           </SwiperSlide>
 
+          {/* MODAL FULLSCREEN */}
+          {selectedImg && (
+            <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setSelectedImg(null)}>
+              <img src={selectedImg} alt="Preview" className="max-w-4xl w-full max-h-[90vh] object-contain" />
+            </div>
+          )}
+
+          {/* END PLATINUM Daisy */}
+
           {/* GOLD Daisy */}
+
           <SwiperSlide className="!h-auto">
             <div className="bg-white h-full rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105">
               <div>
@@ -189,7 +207,7 @@ const Wedding = () => {
 
                   <div className="mt-auto">
                     <a
-                       href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
+                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Gold%20Package%20(1500 Pax)%20Daisy"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -204,6 +222,15 @@ const Wedding = () => {
               </div>
             </div>
           </SwiperSlide>
+
+          {/* MODAL FULLSCREEN */}
+          {selectedImg && (
+            <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setSelectedImg(null)}>
+              <img src={selectedImg} alt="Preview" className="max-w-4xl w-full max-h-[90vh] object-contain" />
+            </div>
+          )}
+
+          {/* END GOLD Daisy */}
 
           {/* ROYAL Daisy */}
           <SwiperSlide className="!h-auto">
@@ -220,7 +247,7 @@ const Wedding = () => {
 
                   <div className="mt-auto">
                     <a
-                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
+                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Royal%20Package%20(2000 Pax)%20Daisy"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -235,6 +262,14 @@ const Wedding = () => {
               </div>
             </div>
           </SwiperSlide>
+
+          {/* MODAL FULLSCREEN */}
+          {selectedImg && (
+            <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setSelectedImg(null)}>
+              <img src={selectedImg} alt="Preview" className="max-w-4xl w-full max-h-[90vh] object-contain" />
+            </div>
+          )}
+          {/* END Royal Daisy */}
         </Swiper>
 
         {/* Wedding Package ZR */}
@@ -278,7 +313,7 @@ const Wedding = () => {
 
                   <div className="mt-auto">
                     <a
-                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
+                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Outdoor%20Package%20(500 Pax)%20ZR"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -293,6 +328,14 @@ const Wedding = () => {
               </div>
             </div>
           </SwiperSlide>
+          {/* MODAL FULLSCREEN */}
+          {selectedImg && (
+            <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setSelectedImg(null)}>
+              <img src={selectedImg} alt="Preview" className="max-w-4xl w-full max-h-[90vh] object-contain" />
+            </div>
+          )}
+
+          {/* END ZR Outdoor */}
 
           {/* Indoor ZR */}
           <SwiperSlide className="!h-auto">
@@ -309,7 +352,7 @@ const Wedding = () => {
 
                   <div className="mt-auto">
                     <a
-                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
+                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Indoor%20Package%20(1000 Pax)%20ZR"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -325,6 +368,15 @@ const Wedding = () => {
             </div>
           </SwiperSlide>
         </Swiper>
+
+        {/* MODAL FULLSCREEN */}
+        {selectedImg && (
+          <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setSelectedImg(null)}>
+            <img src={selectedImg} alt="Preview" className="max-w-4xl w-full max-h-[90vh] object-contain" />
+          </div>
+        )}
+
+        {/* END ZR Indoor */}
 
         {/* Wedding Package Hadrah */}
         <div data-aos="fade-up" data-aos-delay="500">
@@ -367,7 +419,7 @@ const Wedding = () => {
 
                   <div className="mt-auto">
                     <a
-                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
+                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Silver%20Package%20(500 Pax)%20Hadrah"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -382,6 +434,15 @@ const Wedding = () => {
               </div>
             </div>
           </SwiperSlide>
+
+          {/* MODAL FULLSCREEN */}
+          {selectedImg && (
+            <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setSelectedImg(null)}>
+              <img src={selectedImg} alt="Preview" className="max-w-4xl w-full max-h-[90vh] object-contain" />
+            </div>
+          )}
+
+          {/* END hadrah-silver */}
 
           {/* hadrah-silverstart */}
           <SwiperSlide className="!h-auto">
@@ -391,14 +452,14 @@ const Wedding = () => {
                 <div className="p-6">
                   <div className="mb-6">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
-                    <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Silver Package (500 Pax)</h3>
+                    <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Silver Start Package (500 Pax)</h3>
                     <div className="text-amber-600 font-bold text-lg">Rp 110.000.000,-</div>
                   </div>
                   <p className="text-gray-600 mb-4">Rayakan pernikahan cantik dan hemat dengan dekorasi elegan + 500 tamu terpenuhi!</p>
 
                   <div className="mt-auto">
                     <a
-                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
+                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Silver%20Start%20Package%20(500 Pax)%20Hadrah"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -413,6 +474,14 @@ const Wedding = () => {
               </div>
             </div>
           </SwiperSlide>
+          {/* MODAL FULLSCREEN */}
+          {selectedImg && (
+            <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setSelectedImg(null)}>
+              <img src={selectedImg} alt="Preview" className="max-w-4xl w-full max-h-[90vh] object-contain" />
+            </div>
+          )}
+
+          {/* END hadrah-silverstart */}
 
           {/* hadrah-silver 800 */}
           <SwiperSlide className="!h-auto">
@@ -429,7 +498,7 @@ const Wedding = () => {
 
                   <div className="mt-auto">
                     <a
-                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
+                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Silver%20Package%20(800 Pax)%20Hadrah"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -444,6 +513,14 @@ const Wedding = () => {
               </div>
             </div>
           </SwiperSlide>
+          {/* MODAL FULLSCREEN */}
+          {selectedImg && (
+            <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setSelectedImg(null)}>
+              <img src={selectedImg} alt="Preview" className="max-w-4xl w-full max-h-[90vh] object-contain" />
+            </div>
+          )}
+
+          {/* END hadrah-silver 800 */}
 
           {/* hadrah-silver 1000 */}
           <SwiperSlide className="!h-auto">
@@ -460,7 +537,7 @@ const Wedding = () => {
 
                   <div className="mt-auto">
                     <a
-                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
+                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Silver%20Package%20(1000 Pax)%20Hadrah"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -475,6 +552,14 @@ const Wedding = () => {
               </div>
             </div>
           </SwiperSlide>
+          {/* MODAL FULLSCREEN */}
+          {selectedImg && (
+            <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setSelectedImg(null)}>
+              <img src={selectedImg} alt="Preview" className="max-w-4xl w-full max-h-[90vh] object-contain" />
+            </div>
+          )}
+
+          {/* END hadrah-silver 1000 */}
 
           {/* hadrah-silver 1000 all in */}
           <SwiperSlide className="!h-auto">
@@ -491,7 +576,7 @@ const Wedding = () => {
 
                   <div className="mt-auto">
                     <a
-                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
+                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Silver%20Package%20(1000 Pax)%20All%20In%20Hadrah"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -506,6 +591,14 @@ const Wedding = () => {
               </div>
             </div>
           </SwiperSlide>
+          {/* MODAL FULLSCREEN */}
+          {selectedImg && (
+            <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setSelectedImg(null)}>
+              <img src={selectedImg} alt="Preview" className="max-w-4xl w-full max-h-[90vh] object-contain" />
+            </div>
+          )}
+
+          {/* END hadrah-silver 1000 All In */}
 
           {/* hadrah-gold 1500  */}
           <SwiperSlide className="!h-auto">
@@ -522,7 +615,7 @@ const Wedding = () => {
 
                   <div className="mt-auto">
                     <a
-                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
+                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Gold%20Package%20(1500 Pax)%20Hadrah"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -537,6 +630,14 @@ const Wedding = () => {
               </div>
             </div>
           </SwiperSlide>
+          {/* MODAL FULLSCREEN */}
+          {selectedImg && (
+            <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setSelectedImg(null)}>
+              <img src={selectedImg} alt="Preview" className="max-w-4xl w-full max-h-[90vh] object-contain" />
+            </div>
+          )}
+
+          {/* END hadrah-gold 1500 */}
 
           {/* hadrah-royal 2000 */}
           <SwiperSlide className="!h-auto">
@@ -553,7 +654,7 @@ const Wedding = () => {
 
                   <div className="mt-auto">
                     <a
-                      href="https://api.whatsapp.com/send?phone=6282267878880&text=Halo%2C%20Saya%20mau%20booking%20paket%20meeting%20halfday%20A"
+                      href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Royal%20Package%20(2000 Pax)%20Hadrah"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center terracotaa-btn text-white font-medium py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -568,6 +669,15 @@ const Wedding = () => {
               </div>
             </div>
           </SwiperSlide>
+
+          {/* MODAL FULLSCREEN */}
+          {selectedImg && (
+            <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50" onClick={() => setSelectedImg(null)}>
+              <img src={selectedImg} alt="Preview" className="max-w-4xl w-full max-h-[90vh] object-contain" />
+            </div>
+          )}
+
+          {/* END hadrah royal 2000*/}
         </Swiper>
       </div>
 

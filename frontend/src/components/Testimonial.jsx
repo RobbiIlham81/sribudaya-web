@@ -249,13 +249,13 @@ const Testimonial = () => {
                   {/* Center Description - Fixed Position */}
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
                     <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-12 max-w-2xl text-center border border-gray-200">
-                      <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-100 rounded-full mb-8 animate-jump-in">
-                        <Camera className="w-10 h-10 text-blue-600" />
+                      <div className="inline-flex items-center justify-center w-20 h-20 bg-amber-100 rounded-full mb-8 animate-jump-in">
+                        <Camera className="w-10 h-10 text-amber-600" />
                       </div>
-                      <h3 className="text-2xl text-blue-600 font-semibold mb-6 animate-fade-right">
+                      <h3 className="text-2xl text-amber-600 font-semibold mb-6 animate-fade-right">
                         {galleryData.description.subtitle}
                       </h3>
-                      <h2 className="text-5xl font-bold text-gray-900 mb-4 animate-fade-left">
+                      <h2 className="text-5xl font-bold text-amber-700 mb-4 animate-fade-left">
                         {galleryData.description.title}
                       </h2>
                       <p className="text-gray-600 leading-relaxed mb-8 text-lg animate-fade-right">
@@ -268,7 +268,7 @@ const Testimonial = () => {
                               key={index}
                               className="flex items-center text-base animate-jump-in"
                             >
-                              <div className="w-3 h-3 bg-blue-600 rounded-full mr-4"></div>
+                              <div className="w-3 h-3 bg-amber-600 rounded-full mr-4"></div>
                               <span className="text-gray-700 font-medium">
                                 {highlight}
                               </span>
@@ -511,8 +511,8 @@ const Testimonial = () => {
               <div className="lg:hidden animate-fade-up">
                 {/* Description Section */}
                 <div className="text-center mb-12">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
-                    <Camera className="w-8 h-8 text-blue-600" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-6">
+                    <Camera className="w-8 h-8 text-amber-600" />
                   </div>
                   <h3 className="subtitle mb-6">
                     {galleryData.description.subtitle}
@@ -527,7 +527,7 @@ const Testimonial = () => {
                     {galleryData.description.highlights.map(
                       (highlight, index) => (
                         <div key={index} className="flex items-center text-sm">
-                          <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
+                          <div className="w-2 h-2 bg-amber-600 rounded-full mr-2"></div>
                           <span className="text-gray-700">{highlight}</span>
                         </div>
                       )
@@ -591,8 +591,8 @@ const Testimonial = () => {
           {/* Header Section */}
           <LazyDiv>
             <div className="text-center mb-16 animate-fade-up">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
-                <Quote className="w-8 h-8 text-blue-600" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-6">
+                <Quote className="w-8 h-8 text-amber-600" />
               </div>
               <h2 className="page-title animate-fade-up">
                 Penilaian Dari Para Tamu
@@ -624,7 +624,7 @@ const Testimonial = () => {
                         <div className="p-8 md:p-12">
                           {/* Quote Icon */}
                           <div className="mb-6">
-                            <Quote className="w-12 h-12 text-blue-400" />
+                            <Quote className="w-12 h-12 text-amber-400" />
                           </div>
 
                           {/* Rating */}
@@ -652,7 +652,7 @@ const Testimonial = () => {
                                   e.target.src =
                                     "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face";
                                 }}
-                                className="w-16 h-16 rounded-full object-cover border-4 border-blue-100"
+                                className="w-16 h-16 rounded-full object-cover border-4 border-amber-100"
                               />
                               <div>
                                 <h4 className="font-semibold text-gray-900 text-lg">
@@ -664,8 +664,8 @@ const Testimonial = () => {
                               </div>
                             </div>
 
-                            <div className="bg-blue-50 px-4 py-2 rounded-full">
-                              <span className="text-blue-700 font-medium text-sm">
+                            <div className="bg-amber-50 px-4 py-2 rounded-full">
+                              <span className="text-amber-700 font-medium text-sm">
                                 {testimonial.stayType}
                               </span>
                             </div>
@@ -680,14 +680,14 @@ const Testimonial = () => {
               {/* Navigation Arrows */}
               <button
                 onClick={prevSlide}
-                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white hover:bg-blue-50 text-gray-700 hover:text-blue-600 p-3 rounded-full shadow-lg border border-gray-200 transition-all duration-300 z-10 group"
+                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white hover:bg-amber-50 text-gray-700 hover:text-amber-600 p-3 rounded-full shadow-lg border border-gray-200 transition-all duration-300 z-10 group"
               >
                 <ChevronLeft className="w-6 h-6 group-hover:scale-110 transition-transform" />
               </button>
 
               <button
                 onClick={nextSlide}
-                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white hover:bg-blue-50 text-gray-700 hover:text-blue-600 p-3 rounded-full shadow-lg border border-gray-200 transition-all duration-300 z-10 group"
+                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white hover:bg-amber-50 text-gray-700 hover:text-amber-600 p-3 rounded-full shadow-lg border border-gray-200 transition-all duration-300 z-10 group"
               >
                 <ChevronRight className="w-6 h-6 group-hover:scale-110 transition-transform" />
               </button>
@@ -702,8 +702,8 @@ const Testimonial = () => {
                 onClick={() => goToSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   currentSlide === index
-                    ? "bg-blue-600 scale-125"
-                    : "bg-gray-300 hover:bg-blue-400"
+                    ? "bg-amber-600 scale-125"
+                    : "bg-gray-300 hover:bg-amber-400"
                 }`}
               />
             ))}

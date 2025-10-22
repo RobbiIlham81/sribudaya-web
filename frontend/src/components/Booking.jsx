@@ -93,22 +93,46 @@ const Booking = () => {
               className="mySwiper"
             >
               <SwiperSlide>
-                <img className="" src="/images/booking/family-deluxe01_compressed.jpg" alt="family-deluxe01_compressed.jpg" />
+                <img
+                  className="w-full"
+                  src="/images/booking/family-deluxe01_compressed.jpg"
+                  alt="family-deluxe01_compressed.jpg"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="" src="/images/booking/family-studio01_compressed.jpg" alt="family-studio01_compressed.jpg" />
+                <img
+                  className="w-full"
+                  src="/images/booking/family-studio01_compressed.jpg"
+                  alt="family-studio01_compressed.jpg"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="" src="/images/booking/family-suite01_compressed.jpg" alt="family-suite01_compressed.jpg" />
+                <img
+                  className="w-full"
+                  src="/images/booking/family-suite01_compressed.jpg"
+                  alt="family-suite01_compressed.jpg"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="" src="/images/booking/resort-room-front_compressed.jpg" alt="resort-room-front_compressed.jpg" />
+                <img
+                  className="w-full"
+                  src="/images/booking/resort-room-front_compressed.jpg"
+                  alt="resort-room-front_compressed.jpg"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="" src="/images/booking/family-suite02_compressed.jpg" alt="family-suite02_compressed.jpg" />
+                <img
+                  className="w-full"
+                  src="/images/booking/family-suite02_compressed.jpg"
+                  alt="family-suite02_compressed.jpg"
+                />
               </SwiperSlide>
               <SwiperSlide>
-                <img className="" src="/images/booking/family-studio02_compressed.jpg" alt="family-studio02_compressed.jpg" />
+                <img
+                  className="w-full"
+                  src="/images/booking/family-studio02_compressed.jpg"
+                  alt="family-studio02_compressed.jpg"
+                />
               </SwiperSlide>
             </Swiper>
             <div className="absolute inset-0 z-10 bg-black bg-opacity-30"></div>

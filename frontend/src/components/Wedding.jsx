@@ -77,7 +77,7 @@ const Wedding = () => {
       {/* Wedding Package list */}
       <div className="max-w-6xl mx-auto px-6 py-16 ">
         <div className="text-center mb-12" data-aos="fade-up">
-          <h2 className="text-xl font-bold mb-4 text-amber-600">Wedding Packages</h2>
+          <h2 className="text-3xl font-bold mb-4 text-amber-600">Wedding Packages</h2>
           <p className="text-gray-600">Pilih Paket Perayaan Terbaik Anda</p>
         </div>
 

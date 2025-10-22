@@ -115,17 +115,19 @@ const Wedding = () => {
           {/* SILVER Daisy */}
           <SwiperSlide className="!h-auto">
             <div className="bg-white h-full rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105">
-              <div>
-                <img src="/images/wedding/daisy-silver-package.png" alt="Silver Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/daisy-silver-package.png")} />
-                <div className="p-6">
-                  <div className="mb-6">
+              <div className="h-full flex flex-col">
+                <div className="flex-initial">
+                  <img src="/images/wedding/daisy-silver-package.png" alt="Silver Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/daisy-silver-package.png")} />
+                </div>
+                <div className="p-6 flex-auto flex flex-col">
+                  <div className="mb-6 flex-initial">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Silver Package (1000 Pax)</h3>
                     <div className="text-amber-600 font-bold text-lg">Rp 135.000.000,-</div>
                   </div>
                   <p className="text-gray-600 mb-4">Solusi hemat dengan fasilitas lengkap.</p>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto flex-initial">
                     <a
                       href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Silver%20Package%20(1000 Pax)%20Daisy"
                       target="_blank"
@@ -154,17 +156,19 @@ const Wedding = () => {
           {/* PLATINUM Daisy */}
           <SwiperSlide className="!h-auto">
             <div className="bg-white h-full rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105">
-              <div>
-                <img src="/images/wedding/daisy-platinum-package.png" alt="Platinum Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/daisy-platinum-package.png")} />
-                <div className="p-6">
-                  <div className="mb-6">
+              <div className="h-full flex flex-col">
+                <div className="flex-initial">
+                  <img src="/images/wedding/daisy-platinum-package.png" alt="Platinum Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/daisy-platinum-package.png")} />
+                </div>
+                <div className="p-6 flex-auto flex flex-col">
+                  <div className="mb-6 flex-initial">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Platinum Package (1000 Pax)</h3>
                     <div className="text-amber-600 font-bold text-lg">Rp155.000.000,-</div>
                   </div>
                   <p className="text-gray-600 mb-4">Level premium untuk kesan lebih mewah.</p>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto flex-initial">
                     <a
                       href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Platinum%20Package%20(1000 Pax)%20Daisy"
                       target="_blank"
@@ -195,17 +199,19 @@ const Wedding = () => {
 
           <SwiperSlide className="!h-auto">
             <div className="bg-white h-full rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105">
-              <div>
-                <img src="/images/wedding/daisy-gold-package.png" alt="Gold Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/daisy-gold-package.png")} />
-                <div className="p-6">
-                  <div className="mb-6">
+              <div className="h-full flex flex-col">
+                <div className="flex-initial">
+                  <img src="/images/wedding/daisy-gold-package.png" alt="Gold Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/daisy-gold-package.png")} />
+                </div>
+                <div className="p-6 flex-auto flex flex-col">
+                  <div className="mb-6 flex-initial">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Gold Package (1500 Pax)</h3>
                     <div className="text-amber-600 font-bold text-lg">Rp 182.500.000,-</div>
                   </div>
                   <p className="text-gray-600 mb-4">Lebih besar, lebih meriah, tetap elegan.</p>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto flex-initial">
                     <a
                       href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Gold%20Package%20(1500 Pax)%20Daisy"
                       target="_blank"
@@ -235,17 +241,19 @@ const Wedding = () => {
           {/* ROYAL Daisy */}
           <SwiperSlide className="!h-auto">
             <div className="bg-white h-full rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105">
-              <div>
-                <img src="/images/wedding/daisy-royal-package.png" alt="Royal Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/daisy-royal-package.png")} />
-                <div className="p-6">
-                  <div className="mb-6">
+              <div className="h-full flex flex-col">
+                <div className="flex-initial">
+                  <img src="/images/wedding/daisy-royal-package.png" alt="Royal Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/daisy-royal-package.png")} />
+                </div>
+                <div className="p-6 flex-auto flex flex-col">
+                  <div className="mb-6 flex-initial">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Royal Package (2000 Pax)</h3>
                     <div className="text-amber-600 font-bold text-lg">Rp 210.000.000,-</div>
                   </div>
                   <p className="text-gray-600 mb-4">Paket paling eksklusif untuk perayaan megah.</p>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto flex-initial">
                     <a
                       href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Royal%20Package%20(2000 Pax)%20Daisy"
                       target="_blank"
@@ -301,17 +309,19 @@ const Wedding = () => {
           {/* Outdoor ZR */}
           <SwiperSlide className="!h-auto">
             <div className="bg-white h-full rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105">
-              <div>
-                <img src="/images/wedding/zr-outdoor.png" alt="Outdoor Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/zr-outdoor.png")} />
-                <div className="p-6">
-                  <div className="mb-6">
+              <div className="h-full flex flex-col">
+                <div className="flex-initial">
+                  <img src="/images/wedding/zr-outdoor.png" alt="Outdoor Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/zr-outdoor.png")} />
+                </div>
+                <div className="p-6 flex-auto flex flex-col">
+                  <div className="mb-6 flex-initial">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Outdoor Package (500 Pax)</h3>
                     <div className="text-amber-600 font-bold text-lg">Rp 110.000.000,-</div>
                   </div>
                   <p className="text-gray-600 mb-4">Dekorasi cantik, tenda, hiburan, dokumentasi, dan planner profesional untuk suasana romantis di alam terbuka.</p>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto flex-initial">
                     <a
                       href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Outdoor%20Package%20(500 Pax)%20ZR"
                       target="_blank"
@@ -340,9 +350,11 @@ const Wedding = () => {
           {/* Indoor ZR */}
           <SwiperSlide className="!h-auto">
             <div className="bg-white h-full rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105">
-              <div>
-                <img src="/images/wedding/zr-indoor.png" alt="Indoor Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/zr-indoor.png")} />
-                <div className="p-6">
+              <div className="h-full flex flex-col">
+                <div className="flex-initial">
+                  <img src="/images/wedding/zr-indoor.png" alt="Indoor Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/zr-indoor.png")} />
+                </div>
+                <div className="p-6 flex-auto flex flex-col">
                   <div className="mb-6">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Indoor Package (1000 Pax)</h3>
@@ -350,7 +362,7 @@ const Wedding = () => {
                   </div>
                   <p className="text-gray-600 mb-4">Venue ber-AC, dekorasi elegan, dokumentasi, hiburan, dan wedding planner untuk acara mewah dan tertata rapi.</p>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto flex-initial">
                     <a
                       href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Indoor%20Package%20(1000 Pax)%20ZR"
                       target="_blank"
@@ -407,17 +419,19 @@ const Wedding = () => {
           {/* hadrah-silver */}
           <SwiperSlide className="!h-auto">
             <div className="bg-white h-full rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105">
-              <div>
-                <img src="/images/wedding/hadrah-silver.png" alt="Silver Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/hadrah-silver.png")} />
-                <div className="p-6">
-                  <div className="mb-6">
+              <div className="h-full flex flex-col">
+                <div className="flex-initial">
+                  <img src="/images/wedding/hadrah-silver.png" alt="Silver Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/hadrah-silver.png")} />
+                </div>
+                <div className="p-6 flex-auto flex flex-col">
+                  <div className="mb-6 flex-initial">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Silver Package (500 Pax)</h3>
                     <div className="text-amber-600 font-bold text-lg">Rp 107.000.000,-</div>
                   </div>
                   <p className="text-gray-600 mb-4">Paket lengkap + sound, MC, dekorasi pelaminan, catering 500 pax, harga paling bersahabat!</p>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto flex-initial">
                     <a
                       href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Silver%20Package%20(500 Pax)%20Hadrah"
                       target="_blank"
@@ -447,17 +461,19 @@ const Wedding = () => {
           {/* hadrah-silverstart */}
           <SwiperSlide className="!h-auto">
             <div className="bg-white h-full rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105">
-              <div>
-                <img src="/images/wedding/hadrah-silverstart.png" alt="Silver Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/hadrah-silverstart.png")} />
-                <div className="p-6">
-                  <div className="mb-6">
+              <div className="h-full flex flex-col">
+                <div className="flex-initial">
+                  <img src="/images/wedding/hadrah-silverstart.png" alt="Silver Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/hadrah-silverstart.png")} />
+                </div>
+                <div className="p-6 flex-auto flex flex-col">
+                  <div className="mb-6 flex-initial">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Silver Start Package (500 Pax)</h3>
                     <div className="text-amber-600 font-bold text-lg">Rp 110.000.000,-</div>
                   </div>
                   <p className="text-gray-600 mb-4">Rayakan pernikahan cantik dan hemat dengan dekorasi elegan + 500 tamu terpenuhi!</p>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto flex-initial">
                     <a
                       href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Silver%20Start%20Package%20(500 Pax)%20Hadrah"
                       target="_blank"
@@ -486,17 +502,19 @@ const Wedding = () => {
           {/* hadrah-silver 800 */}
           <SwiperSlide className="!h-auto">
             <div className="bg-white h-full rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105">
-              <div>
-                <img src="/images/wedding/hadrah-silver800.png" alt="Silver Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/hadrah-silver800.png")} />
-                <div className="p-6">
-                  <div className="mb-6">
+              <div className="h-full flex flex-col">
+                <div className="flex-initial">
+                  <img src="/images/wedding/hadrah-silver800.png" alt="Silver Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/hadrah-silver800.png")} />
+                </div>
+                <div className="p-6 flex-auto flex flex-col">
+                  <div className="mb-6 flex-initial">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Silver Package (800 Pax)</h3>
                     <div className="text-amber-600 font-bold text-lg">Rp 120.000.000,-</div>
                   </div>
                   <p className="text-gray-600 mb-4">Lebih banyak tamu, tetap mewah! Dekorasi megah + hiburan + 800 pax catering!</p>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto flex-initial">
                     <a
                       href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Silver%20Package%20(800 Pax)%20Hadrah"
                       target="_blank"
@@ -525,17 +543,19 @@ const Wedding = () => {
           {/* hadrah-silver 1000 */}
           <SwiperSlide className="!h-auto">
             <div className="bg-white h-full rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105">
-              <div>
-                <img src="/images/wedding/hadrah-silver1000.png" alt="Silver Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/hadrah-silver1000.png")} />
-                <div className="p-6">
-                  <div className="mb-6">
+              <div className="h-full flex flex-col">
+                <div className="flex-initial">
+                  <img src="/images/wedding/hadrah-silver1000.png" alt="Silver Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/hadrah-silver1000.png")} />
+                </div>
+                <div className="p-6 flex-auto flex flex-col">
+                  <div className="mb-6 flex-initial">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Silver Package (1000 Pax)</h3>
                     <div className="text-amber-600 font-bold text-lg">Rp 130.000.000,-</div>
                   </div>
                   <p className="text-gray-600 mb-4">Venue luas + dekorasi besar + hiburan + 1000 pax catering, cocok untuk pesta meriah!</p>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto flex-initial">
                     <a
                       href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Silver%20Package%20(1000 Pax)%20Hadrah"
                       target="_blank"
@@ -564,17 +584,19 @@ const Wedding = () => {
           {/* hadrah-silver 1000 all in */}
           <SwiperSlide className="!h-auto">
             <div className="bg-white h-full rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105">
-              <div>
-                <img src="/images/wedding/hadrah-silver1000-all.png" alt="Silver Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/hadrah-silver1000-all.png")} />
-                <div className="p-6">
-                  <div className="mb-6">
+              <div className="h-full flex flex-col">
+                <div className="flex-initial">
+                  <img src="/images/wedding/hadrah-silver1000-all.png" alt="Silver Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/hadrah-silver1000-all.png")} />
+                </div>
+                <div className="p-6 flex-auto flex flex-col">
+                  <div className="mb-6 flex-initial">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Silver Package (1000 Pax) All In</h3>
                     <div className="text-amber-600 font-bold text-lg">Rp 150.000.000,-</div>
                   </div>
                   <p className="text-gray-600 mb-4">Semua diurus! WO, MUA, foto/video, photobooth, dekorasi, hiburan & catering 1000 pax!</p>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto flex-initial">
                     <a
                       href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Silver%20Package%20(1000 Pax)%20All%20In%20Hadrah"
                       target="_blank"
@@ -603,9 +625,11 @@ const Wedding = () => {
           {/* hadrah-gold 1500  */}
           <SwiperSlide className="!h-auto">
             <div className="bg-white h-full rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105">
-              <div>
-                <img src="/images/wedding/hadrah-gold1500.png" alt="Gold Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/hadrah-gold1500.png")} />
-                <div className="p-6">
+              <div className="h-full flex flex-col">
+                <div className="flex-initial">
+                  <img src="/images/wedding/hadrah-gold1500.png" alt="Gold Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/hadrah-gold1500.png")} />
+                </div>
+                <div className="p-6 flex-auto flex flex-col">
                   <div className="mb-6">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Gold Package (1500 Pax)</h3>
@@ -613,7 +637,7 @@ const Wedding = () => {
                   </div>
                   <p className="text-gray-600 mb-4">Paket premium dengan dekorasi megah, dokumentasi, band, MUA, photobooth & 1500 pax catering!</p>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto flex-initial">
                     <a
                       href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Gold%20Package%20(1500 Pax)%20Hadrah"
                       target="_blank"
@@ -642,17 +666,19 @@ const Wedding = () => {
           {/* hadrah-royal 2000 */}
           <SwiperSlide className="!h-auto">
             <div className="bg-white h-full rounded-2xl shadow-lg overflow-hidden border border-gray-100 transition-transform transform hover:scale-105">
-              <div>
-                <img src="/images/wedding/hadrah-royal2000.png" alt="Royal Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/hadrah-royal2000.png")} />
-                <div className="p-6">
-                  <div className="mb-6">
+              <div className="h-full flex flex-col">
+                <div className="flex-initial">
+                  <img src="/images/wedding/hadrah-royal2000.png" alt="Royal Package" className="w-full h-full object-cover cursor-pointer" onClick={() => setSelectedImg("/images/wedding/hadrah-royal2000.png")} />
+                </div>
+                <div className="p-6 flex-auto flex flex-col">
+                  <div className="mb-6 flex-initial">
                     <div className="w-12 h-1 bg-amber-600 mb-4"></div>
                     <h3 className="text-xl md:text-2xl font-bold text-black mb-2">Royal Package (2000 Pax)</h3>
                     <div className="text-amber-600 font-bold text-lg">Rp 235.000.000,-</div>
                   </div>
                   <p className="text-gray-600 mb-4">Pengalaman pernikahan mewah ala kerajaan: dekorasi royal, full WO, lighting, dokumentasi lengkap & 2000 pax catering!</p>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto flex-initial">
                     <a
                       href="https://api.whatsapp.com/send?phone=6282172004960&text=Halo%2C%20Saya%20mau%20booking%20Royal%20Package%20(2000 Pax)%20Hadrah"
                       target="_blank"

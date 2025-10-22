@@ -13,7 +13,7 @@ const PackageCardPool = () => {
   const PoolSlide = [
     {
       id: 1,
-      src: "/images/booking/pool/kolam0.JPG",
+      src: "/images/booking/pool/kolam0.jpg",
       alt: "kolam0.jpg",
       title: "Pintu Masuk Kolam Renang",
       desc: "Desain modern bergaya mediterania dengan dinding putih dan lengkungan khas.",
@@ -27,7 +27,7 @@ const PackageCardPool = () => {
     },
     {
       id: 3,
-      src: "/images/booking/pool/kolam2.JPG",
+      src: "/images/booking/pool/kolam2.jpg",
       alt: "kolam2.jpg",
       title: "Area Santai Tepi Kolam",
       desc: "Area duduk nyaman bergaya minimalis, ideal untuk bersantai atau menikmati hidangan ringan.",

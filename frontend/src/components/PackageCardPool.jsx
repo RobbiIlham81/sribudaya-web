@@ -28,7 +28,7 @@ const PackageCardPool = () => {
     {
       id: 3,
       src: "/images/booking/pool/kolam2.jpeg",
-      alt: "kolam2.jpg",
+      alt: "kolam2.jpeg",
       title: "Area Santai Tepi Kolam",
       desc: "Area duduk nyaman bergaya minimalis, ideal untuk bersantai atau menikmati hidangan ringan.",
     },

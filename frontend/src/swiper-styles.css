@@ -45,3 +45,14 @@
   background-color: #ffffff !important;
   text-align: left;
 }
+
+/* Swiper pagination bullets styling */
+.swiper-pagination-bullet {
+  background-color: #f59e0b !important; /* amber-500 */
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #d97706 !important; /* amber-600 */
+  opacity: 1;
+}
